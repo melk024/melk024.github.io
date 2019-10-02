@@ -11,7 +11,7 @@ class Question {
 }
 
 var questions = [
-	new Question("Hyper Text Markup Language Stand For?", ["JavaScript", "XHTML","CSS", "HTML"], "HTML"),
+	new Question("Hyper Text Markup Language stands for?", ["JavaScript", "XHTML","CSS", "HTML"], "HTML"),
 	new Question("Which language is used for styling web pages?", ["HTML", "JQuery", "CSS", "XML"], "CSS"),
 	new Question("What has not been covered in PUI lab?", ["HTML", "CSS","Javascript", "Java"], "Java"),
 ];
