@@ -1,0 +1,1 @@
+EXTRA WORK: Product pages exist for all six products
