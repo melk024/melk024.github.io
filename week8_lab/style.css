@@ -1,0 +1,14 @@
+body {
+	font-family: 'Underdog', cursive;
+	text-align: center;
+	color: tan;
+}
+
+#save {
+	border: none;
+	background-color: tan;
+	color: white;
+	border-radius: 5px;
+	padding: 10px;
+	cursor: pointer;
+}
