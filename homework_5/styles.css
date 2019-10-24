@@ -103,6 +103,43 @@ h3 {
 	color: white;
 }
 
+#cartIcon {
+	height: 35px;
+	float: right;
+	display: inline-block;
+	margin-left: 8px;
+}
+
+#cartIcon img {
+	width: 35px;
+	width: 35px;
+}
+
+/**following code adapted from Stack Overflow**/
+
+.badge {
+  padding-left: 9px;
+  padding-right: 9px;
+  -webkit-border-radius: 9px;
+  -moz-border-radius: 9px;
+  border-radius: 9px;
+}
+
+.label-warning[href],
+.badge-warning[href] {
+  background-color: #fff9c2;
+}
+#lblCartCount {
+    font-size: 12px;
+    background: #fff9c2;
+    color: #ffa791;
+    padding: 0 5px;
+    vertical-align: top;
+	margin-left: -10px;
+}
+
+/**end of adapted code**/
+
 #hero {
 	width: 100%;
 	height: 700px;
@@ -316,49 +353,101 @@ h3 {
 	height: 125px;
 }
 
-.glaze {
-	width: 80px;
-	height: 110px;
-	display: inline-block;
-	text-align: center;
-	float: right;
-	margin: 0px 8px 0px 8px;
-	cursor: pointer;
+/**following code adapted from S**/
+
+#glaze ul {
+  list-style-type: none;
 }
 
-.glaze img {
-	width: 80px;
+#glaze li {
+  display: inline-block;
+  width: 80px;
+  height: 110px;
+  text-align: center;
+  float: right;
+  margin: 0px 8px 0px 8px;
 }
+
+#glaze input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+#glaze input[type="radio"][id^="cb"] {
+  display: none;
+}
+
+#glaze label {
+  display: block;
+  position: relative;
+  cursor: pointer;
+}
+
+#glaze img{
+	width: 80px;
+	height: 80px;
+}
+
+#glaze :checked+label {
+	background-color: #fff9c2;
+}
+
+/**end of adapted code**/
 
 #quantity {
 	width: 534px;
 	height: 60px;
 }
 
-.quantity {
-	float: right;
-	font-size: 50px;
-	margin: 0px;
-	font-weight: bolder;
+/**following code adapted from S**/
+
+#quantity ul {
+  list-style-type: none;
 }
 
-.quantity li {
-	display: inline;
-	margin: 0px 20px 0px 20px;
+#quantity li {
+  float: right;
+  font-size: 50px;
+  margin: 0px;
+  font-weight: bolder;
+  display: inline;
+  margin: 0px 20px 0px 20px;
 }
+
+#quantity input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+#quantity input[type="radio"][id^="qrb"] {
+  display: none;
+}
+
+#quantity label {
+  display: block;
+  position: relative;
+  cursor: pointer;
+}
+
+#quantity :checked+label {
+	background-color: #fff9c2;
+}
+
+/**end of adapted code**/
 
 .add {
 	background-color: #fff9c2;
 	border-radius: 10px;
 	border: none;
-	cursor: not-allowed;
-	opacity: 0.6;
 	font-size: 20px;
 	text-align: center;
 	padding: 10px;
 	color: #ffa791;
 	float: right;
 	margin-left: 400px;
+	margin-top: 35px;
 }	
 
 .back {
@@ -392,4 +481,42 @@ h3 {
 .gallery img {
 	width: 150px;
 	height: 150px;
+}
+
+/**cart page**/
+
+#cartContainer {
+	margin: 115px 100px 0px 100px;
+	height: 950px;
+}
+
+#cartSummary {
+	height: 610px;
+	width: 300px;
+	border: 5px solid #ffa791;
+	float: right;
+	margin-top: 8px;
+}
+
+#cartItems {
+	height: 610px;
+	width: 940px;
+	overflow: auto;
+	margin-top: 8px;
+}
+
+.column {
+	width: 100%;
+	float: right;
+	text-align: right;
+	padding: 0px;
+	font-size: 17px;
+	border-bottom: 5px solid #ffa791;
+}
+
+.column li {
+	display: inline-block;
+	padding: 5px;
+	border-radius: 3px;
+	width: 80px;
 }
