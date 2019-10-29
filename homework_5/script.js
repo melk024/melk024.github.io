@@ -1,10 +1,7 @@
 //if some products already exist, maintain the list between pages
 //else, create a new empty products list
 
-var products = JSON.parse(localStorage.getItem("productsList");
-if products == null {
-	products = [];
-}
+var products = [];
 
 /*function cartAdd(){
 	items++;
@@ -17,10 +14,11 @@ function onLoad(){
 	document.getElementById("lblCartCount").innerHTML = items;
 }*/
 
-function Bun(flavor, glaze, number){
+function Bun(flavor, glaze, number, pic){
 	this.flavor = flavor;
 	this.glaze = glaze;
 	this.number = number;
+	this.pic = pic;
 }
 
 function makeItem(){
@@ -41,8 +39,10 @@ function makeItem(){
 		 quantity = quantityRadio[i].value;
 	   }
 	  }
+	  
+	var picture = document.getElementById("thumbnail").innerHTML;
 
-	var item = new Bun(flav, glaze, quantity);
+	var item = new Bun(flav, glaze, quantity, picture);
 	return item;
 }
 
