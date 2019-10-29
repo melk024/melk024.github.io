@@ -48,5 +48,4 @@ function makeItem(){
 
 function cartAdd(item){	
 	products.push(item);
-	console.log(products);
 }
