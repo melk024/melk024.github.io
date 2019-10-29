@@ -1,6 +1,12 @@
-var items = 0;
+//if some products already exist, maintain the list between pages
+//else, create a new empty products list
 
-function cartAdd(){
+var products = JSON.parse(localStorage.getItem("productsList");
+if products == null {
+	products = [];
+}
+
+/*function cartAdd(){
 	items++;
 	localStorage.setItem("cartitems", items);
 	document.getElementById("lblCartCount").innerHTML = localStorage.getItem("cartitems");
@@ -9,4 +15,38 @@ function cartAdd(){
 function onLoad(){
 	items = localStorage.getItem("cartitems");
 	document.getElementById("lblCartCount").innerHTML = items;
+}*/
+
+function Bun(flavor, glaze, number){
+	this.flavor = flavor;
+	this.glaze = glaze;
+	this.number = number;
+}
+
+function makeItem(){
+	var flav = document.getElementsByTagName("h1")[0].innerHTML;
+	
+	var glaze;	
+	var glazeRadio = document.getElementsByName("glazeRadio");
+	  for(i=0; i<glazeRadio.length; i++){
+	   if(glazeRadio[i].checked){
+		 glaze = glazeRadio[i].value;
+	   }
+	  }
+	   
+	var quantity;	
+	var quantityRadio = document.getElementsByName("quantityRadio");
+	  for(i=0; i<quantityRadio.length; i++){
+	   if(quantityRadio[i].checked){
+		 quantity = quantityRadio[i].value;
+	   }
+	  }
+
+	var item = new Bun(flav, glaze, quantity);
+	return item;
+}
+
+function cartAdd(item){	
+	products.push(item);
+	console.log(products);
 }
