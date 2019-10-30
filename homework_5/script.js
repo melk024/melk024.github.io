@@ -141,8 +141,8 @@ function cartLoad() {
 	if(products === null){		
 		var cartLabel = document.createElement("div");
 		cartLabel.className = "bigItem";
-		cartLabel.innerHTML = "Your cart is currently empty. Please visit the <a href="shop.html">shop</a> to add items.";
-		document.getElementById("cart").appendChild(cartLabel);
+		cartLabel.innerHTML = "Your cart is currently empty. Please visit the shop to add items.";
+		document.getElementById("cartItems").appendChild(cartLabel);
 		//keep check out button disabled, display "your cart is empty" message
 	}
 	
@@ -162,20 +162,20 @@ function cartLoad() {
 			var pic = bunItem.pic;
 			
 			var cartItem = document.createElement("div");
-			cartItem.className = "smallItem";
+			cartItem.className = "bigItem";
 			
 			var cartPic = document.createElement("div");
-			cartPic.className = "itemPic";
+			cartPic.className = "bigPic";
 			cartPic.innerHTML = pic;
 			
 			var cartDesc = document.createElement("div");
-			cartDesc.className = "itemDesc";
-			cartDesc.innerHTML = flavor + "<br><br> Glaze: " + glaze + "<br> Quantity: " + number;
+			cartDesc.className = "bigDesc";
+			cartDesc.innerHTML = flavor + "<br> Glaze: " + glaze + "<br><br><br><br><br><br><br><br> Remove";
 			
 			cartItem.appendChild(cartPic);
 			cartItem.appendChild(cartDesc);
 			
-			document.getElementById("cart").appendChild(cartItem);
+			document.getElementById("cartItems").appendChild(cartItem);
 			
 		}	
 		
