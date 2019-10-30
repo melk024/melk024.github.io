@@ -8,6 +8,27 @@ body{
 
 a {
 	text-decoration: none;
+	color: #fff9c2;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
 }
 
 h1 {
@@ -172,6 +193,8 @@ h3 {
 	transform: translate(4px, 4px);
 }
 
+/**end of adapted code**/
+
 #email {
 	text-align: center;
 	height: 80px;
@@ -307,14 +330,39 @@ h3 {
 	border: 5px solid #ffa791;
 	float: right;
 	margin-top: 8px;
+	max-height: 610px;
+	overflow: auto;
+	overflow-x: hidden;
+}
+
+.smallItem {
+	width: 295px;
+	height: 100px;
+	border-bottom: 3px solid #fff9c2;
+	padding: 10px;
+	margin-right: 5px;
+}
+
+.itemPic{
+	float: left;
+	width: 75px;
+	height: 75px;
+	background-size: 75px 75px;
+}
+
+.itemPic img {
+	width: 75px;
+	height: 75px;
+}
+
+.itemDesc {
+	margin-left: 85px;
 }
 
 .checkOut {
 	background-color: #ffa791;
 	border-radius: 10px;
 	border: none;
-	cursor: not-allowed;
-	opacity: 0.6;
 	font-size: 20px;
 	text-align: center;
 	padding: 10px;
@@ -353,7 +401,7 @@ h3 {
 	height: 125px;
 }
 
-/**following code adapted from S**/
+/**following code adapted from Stack Overflow**/
 
 #glaze ul {
   list-style-type: none;
@@ -400,7 +448,7 @@ h3 {
 	height: 60px;
 }
 
-/**following code adapted from S**/
+/**following code adapted from Stack Overflow**/
 
 #quantity ul {
   list-style-type: none;
@@ -503,6 +551,7 @@ h3 {
 	width: 940px;
 	overflow: auto;
 	margin-top: 8px;
+	overflow-x: hidden;
 }
 
 .column {
@@ -516,7 +565,44 @@ h3 {
 
 .column li {
 	display: inline-block;
-	padding: 5px;
+	text-align: center;
 	border-radius: 3px;
-	width: 80px;
+	width: 120px;
+}
+
+.bigItem {
+	width: 935px;
+	height: 250px;
+	border-bottom: 5px solid #ffa791;
+	padding: 10px;
+}
+
+.bigPic{
+	float: left;
+	width: 200px;
+	height: 200px;
+}
+
+.bigPic img {
+	width: 200px;
+	height: 200px;
+}
+
+.bigDesc {
+	margin-left: 225px;
+}
+
+.bigInfo {
+	width: 100%;
+	float: right;
+	text-align: right;
+	padding: 0px;
+	font-size: 17px;
+}
+
+.bigInfo li {
+	display: inline-block;
+	text-align: center;
+	border-radius: 3px;
+	width: 120px;
 }

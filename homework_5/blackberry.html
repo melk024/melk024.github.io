@@ -16,7 +16,7 @@
 	<script src="script.js" type="text/javascript"></script>
 </head>
 
-<body>
+<body onload="onLoad()">
 	<div id="header">
 		<div id="logo"><img src="https://i.imgur.com/kBumnZh.png"></img></div>
 		<div id="title"><a href="index.html">Bun Bun Bake Shop</a></div>
@@ -27,7 +27,7 @@
 			<a href="index.html"><li>ABOUT</li></a>
 			<a href="index.html"><li>FAQ</li></a>
 			<div id="cartIcon"><a href="cart.html"><img src="https://i.imgur.com/5ojfDEq.png"></a>
-			<span class='badge badge-warning' id='lblCartCount'> 0 </span>	
+			<span class='badge badge-warning' id='lblCartCount'></span>	
 			</div>			
 		</ul>
 	</div>
@@ -40,7 +40,9 @@
 		</div>
 		
 		<div id="prodContainer">
-			<div id="thumbnail"><img src="https://i.imgur.com/5aS5iOz.png"></img></div>
+			<div id="thumbnail">
+			<img src="https://i.imgur.com/5aS5iOz.png"></img>
+			</div>
 			
 			<div id="custom">
 				<h3>Select a glaze</h3>				
