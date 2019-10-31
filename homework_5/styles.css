@@ -617,4 +617,13 @@ h3 {
 
 .remove {
 	padding: 4px;
+	cursor: pointer;
+}
+
+.bigRemove {
+	padding: 4px;
+	cursor: pointer;
+	position: relative;
+	top: 140px;
+	left: 20px;
 }

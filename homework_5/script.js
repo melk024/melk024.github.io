@@ -37,8 +37,6 @@ function cartAdd(item){
 	
 	if(products === null){
 		products = [];
-		var cart = document.getElementById("cart")
-		cart.removeChild(cart.firstChild);
 	}
 	
 	products.push(item);
@@ -74,6 +72,7 @@ function cartAdd(item){
 	cartItem.appendChild(span);
 			
 	document.getElementById("cart").appendChild(cartItem);
+	location.reload();
 }
 
 function onLoad() {
@@ -85,7 +84,7 @@ function onLoad() {
 	
 	var products = JSON.parse(localStorage.getItem("productsList"));
 	
-	if(products === null){		
+	if(products === null || products.length == 0){		
 		var cartLabel = document.createElement("div");
 		cartLabel.className = "smallItem";
 		cartLabel.innerHTML = "Your cart is empty. Please add an item before checking out.";
@@ -180,10 +179,19 @@ function cartLoad() {
 			
 			var cartDesc = document.createElement("div");
 			cartDesc.className = "bigDesc";
-			cartDesc.innerHTML = flavor + "<br> Glaze: " + glaze + "<br><br><br><br><br><br><br><br> Remove";
+			cartDesc.innerHTML = flavor + "<br> Glaze: " + glaze;
+			
+			var span = document.createElement("SPAN");
+			var txt = document.createTextNode("Remove");
+			span.setAttribute("type", "button");
+			span.className = "bigRemove";
+			span.setAttribute("onclick", "removeProd(this.parentNode)");
+			span.appendChild(txt);
 			
 			cartItem.appendChild(cartPic);
 			cartItem.appendChild(cartDesc);
+			cartItem.appendChild(span);
+
 			
 			document.getElementById("cartItems").appendChild(cartItem);
 			
@@ -195,6 +203,22 @@ function cartLoad() {
 
 function removeItem(item){
 	var list = document.getElementsByClassName("smallItem");
+	var i;
+	var locate = 0;
+	for(i = 0; i<list.length; i++){
+		if(list[i] === item){
+			locate = i;
+		}
+	}
+	var products = JSON.parse(localStorage.getItem("productsList"));
+	products.splice(locate, 1);
+	localStorage.setItem("productsList", JSON.stringify(products));
+	localStorage.setItem("cartNumber", products.length);
+	location.reload();
+}
+
+function removeProd(item){
+	var list = document.getElementsByClassName("bigItem");
 	var i;
 	var locate = 0;
 	for(i = 0; i<list.length; i++){
