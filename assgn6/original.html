@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<head>
+	<title>Original Cinnamon Bun | Bun Bun Bake Shop</title>
+	
+	<!-- styles -->
+    <link rel="stylesheet" type="text/css" href="styles.css">
+	
+	<!--favicon-->
+	<link rel="icon" href="https://i.imgur.com/kBumnZh.png">
+	
+	<!--fonts-->
+	<link href="https://fonts.googleapis.com/css?family=Leckerli+One&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+	<!--script-->
+	<script src="script.js" type="text/javascript"></script>
+</head>
+
+<body onload="onLoad()">
+	<div id="header">
+		<div id="logo"><img src="https://i.imgur.com/kBumnZh.png"></img></div>
+		<div id="title"><a href="index.html">Bun Bun Bake Shop</a></div>
+		
+		<ul class="nav">
+			<a href="index.html"><li>HOME</li></a>
+			<a href="shop.html"><li>SHOP</li></a>
+			<a href="index.html"><li>ABOUT</li></a>
+			<a href="index.html"><li>FAQ</li></a>
+			<div id="cartIcon"><a href="cart.html"><img src="https://i.imgur.com/5ojfDEq.png"></a>
+			<span class='badge badge-warning' id='lblCartCount'></span>	
+			</div>			
+		</ul>
+	</div>
+	
+	<div id="shopContainer">
+		<h1>Original Cinnamon Bun</h1>
+		<div id="cart">
+			<h2>View your cart</h2>
+			<a href="cart.html" button class="checkOut">Check Out</a>
+		</div>
+		
+		<div id="prodContainer">
+			<div id="thumbnail"><img src="https://i.imgur.com/8ar8NHt.png"></img></div>
+			
+			<div id="custom">
+				<h3>Select a glaze</h3>				
+				<div id="glaze">					
+					<ul>
+						<li><input type="radio" name="glazeRadio" id="rb1" value="Double Chocolate"/>
+						<label for="rb1"><img src="https://i.imgur.com/opI84m1.png" />Double Chocolate</label>
+						</li>
+						
+						<li><input type="radio" name="glazeRadio" id="rb2" value="Vanilla-Milk"/>
+						<label for="rb2"><img src="https://i.imgur.com/DdPK5z5.png" />Vanilla-Milk</label>
+						</li>
+						
+						<li><input type="radio" name="glazeRadio" id="rb3" value="Sugar-Milk"/>
+						<label for="rb3"><img src="https://i.imgur.com/iPQZOfB.png" />Sugar-Milk</label>
+						</li>
+						
+						<li><input type="radio" name="glazeRadio" id="rb4" value="No glaze"/>
+						<label for="rb4"><img src="https://i.imgur.com/4yawPzX.png" />No glaze</label>
+						</li>
+					</ul>
+				</div>
+				
+				<h3>Select a quantity</h3>
+				<div id="quantity">
+					<ul>
+						<li><input type="radio" name="quantityRadio" id="qrb1" value="12"/>
+						<label for="qrb1">12</label>
+						</li>
+						
+						<li><input type="radio" name="quantityRadio" id="qrb2" value="6"/>
+						<label for="qrb2">6</label>
+						</li>
+						
+						<li><input type="radio" name="quantityRadio" id="qrb3" value="3"/>
+						<label for="qrb3">3</label>
+						</li>
+						
+						<li><input type="radio" name="quantityRadio" id="qrb4" value="1"/>
+						<label for="qrb4">1</label>
+						</li>
+					</ul>				
+				</div>
+				
+				<button class="add" onClick = "cartAdd(makeItem())">Add to cart</button>		
+			</div>
+		
+		</div>
+		
+		<a href="shop.html"><button class="back">🡰 Back to Shop</button></a>
+		
+		<div id="gallery">
+			Explore other flavors
+			<br>
+			<a href="caramel-pecan.html"><div class="gallery"><img src="https://i.imgur.com/nU0Vmle.png"></img></div></a>
+			<a href="pumpkin-spice.html"><div class="gallery"><img src="https://i.imgur.com/JdW6TAk.png"></img></div></a>
+			<a href="original-gf.html"><div class="gallery"><img src="https://i.imgur.com/c3VBRvT.png"></img></div></a>
+			<a href="walnut.html"><div class="gallery"><img src="https://i.imgur.com/g9bAdxI.png"></img></div></a>
+			<a href="blackberry.html"><div class="gallery"><img src="https://i.imgur.com/5aS5iOz.png"></img></div></a>
+		</div>
+		
+	</div>
+</body>
+</html>
