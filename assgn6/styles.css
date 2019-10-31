@@ -525,13 +525,15 @@ h3 {
 	margin-top: 8px;
 	padding: 5px;
 	font-size: 28px;
+	display: flex;
+	flex-wrap: nowrap;
+	overflow: auto;
 }
 
 .gallery {
-	margin: 8px;
+	margin: 8px 24px 8px 24px;
 	width: 150px;
-	display: inline-block;
-	float: right;
+	flex: 0 0 auto;
 }
 
 .gallery img {
