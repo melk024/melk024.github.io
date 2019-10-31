@@ -552,6 +552,7 @@ h3 {
 	border: 5px solid #ffa791;
 	float: right;
 	margin-top: 8px;
+	font-size: 20px;
 }
 
 #cartItems {
@@ -626,6 +627,6 @@ h3 {
 	font-size: 20px;
 	cursor: pointer;
 	position: relative;
-	top: 120px;
+	top: 60px;
 	left: 20px;
 }

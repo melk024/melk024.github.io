@@ -152,7 +152,6 @@ function cartLoad() {
 		cartLabel.className = "bigItem";
 		cartLabel.innerHTML = "Your cart is currently empty. Please visit the shop to add items.";
 		document.getElementById("cartItems").appendChild(cartLabel);
-		//keep check out button disabled, display "your cart is empty" message
 	}
 	
 	else{
@@ -187,15 +186,31 @@ function cartLoad() {
 			span.setAttribute("onclick", "removeProd(this.parentNode)");
 			span.appendChild(txt);
 			
+			var list = document.createElement("UL");
+			list.className = "bigInfo";
+			var price = document.createElement("LI");
+			var pricenode = document.createTextNode("$3.00");
+			price.appendChild(pricenode);
+			var quantity = document.createElement("LI");
+			var quantnode = document.createTextNode(number);
+			quantity.appendChild(quantnode);
+			var total = document.createElement("LI");
+			var totalnode = document.createTextNode("$"+3 * number+".00");
+			total.appendChild(totalnode);
+			list.appendChild(price);
+			list.appendChild(quantity);
+			list.appendChild(total);
+			
+			cartDesc.appendChild(list);
+			
 			cartItem.appendChild(cartPic);
-			cartItem.appendChild(cartDesc);
+			cartItem.appendChild(cartDesc);			
 			cartItem.appendChild(span);
 
 			
-			document.getElementById("cartItems").appendChild(cartItem);
+			document.getElementById("cartItems").appendChild(cartItem);			
 			
-		}	
-		
+		}		
 	}
 	
 }
