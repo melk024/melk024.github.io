@@ -1,13 +1,4 @@
-//if some products already exist, maintain the list between pages
-//else, create a new empty products list
-
-/*function cartAdd(){
-	items++;
-	localStorage.setItem("cartitems", items);
-	 = localStorage.getItem("cartitems");
-}
-
-*/
+//remove code adapted from W3
 
 function Bun(flavor, glaze, number, pic){
 	this.flavor = flavor;
@@ -46,6 +37,8 @@ function cartAdd(item){
 	
 	if(products === null){
 		products = [];
+		var cart = document.getElementById("cart")
+		cart.removeChild(cart.firstChild);
 	}
 	
 	products.push(item);
@@ -68,9 +61,17 @@ function cartAdd(item){
 	var cartDesc = document.createElement("div");
 	cartDesc.className = "itemDesc";
 	cartDesc.innerHTML = item.flavor + "<br><br> Glaze: " + item.glaze + "<br> Quantity: " + item.number;
+	
+	var span = document.createElement("SPAN");
+	var txt = document.createTextNode("Remove");
+	span.setAttribute("type", "button");
+	span.className = "remove";
+	span.setAttribute("onclick", "removeItem(this.parentNode)");
+	span.appendChild(txt);
 			
 	cartItem.appendChild(cartPic);
 	cartItem.appendChild(cartDesc);
+	cartItem.appendChild(span);
 			
 	document.getElementById("cart").appendChild(cartItem);
 }
@@ -118,13 +119,20 @@ function onLoad() {
 			cartDesc.className = "itemDesc";
 			cartDesc.innerHTML = flavor + "<br><br> Glaze: " + glaze + "<br> Quantity: " + number;
 			
+			var span = document.createElement("SPAN");
+			var txt = document.createTextNode("Remove");
+			span.setAttribute("type", "button");
+			span.className = "remove";
+			span.setAttribute("onclick", "removeItem(this.parentNode)");
+			span.appendChild(txt);
+			
 			cartItem.appendChild(cartPic);
 			cartItem.appendChild(cartDesc);
+			cartItem.appendChild(span);
 			
 			document.getElementById("cart").appendChild(cartItem);
 			
 		}	
-		
 	}
 	
 }
@@ -135,6 +143,8 @@ function cartLoad() {
 		count = 0;
 	}
 	document.getElementById("lblCartCount").innerHTML = count;
+	
+	document.getElementsByTagName("h1")[0].innerHTML = "Your cart (" + count + ")";
 	
 	var products = JSON.parse(localStorage.getItem("productsList"));
 	
@@ -182,3 +192,20 @@ function cartLoad() {
 	}
 	
 }
+
+function removeItem(item){
+	var list = document.getElementsByClassName("smallItem");
+	var i;
+	var locate = 0;
+	for(i = 0; i<list.length; i++){
+		if(list[i] === item){
+			locate = i;
+		}
+	}
+	var products = JSON.parse(localStorage.getItem("productsList"));
+	products.splice(locate, 1);
+	localStorage.setItem("productsList", JSON.stringify(products));
+	localStorage.setItem("cartNumber", products.length);
+	location.reload();
+}
+	
