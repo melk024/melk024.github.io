@@ -390,7 +390,7 @@ h3 {
 
 #thumbnail {
 	width: 300px;
-	position: fixed;
+	position: absolute;
 }
 
 #thumbnail img {
@@ -598,6 +598,7 @@ h3 {
 
 .bigDesc {
 	margin-left: 225px;
+	font-size: 20px;
 }
 
 .bigInfo {
@@ -622,8 +623,9 @@ h3 {
 
 .bigRemove {
 	padding: 4px;
+	font-size: 20px;
 	cursor: pointer;
 	position: relative;
-	top: 140px;
+	top: 120px;
 	left: 20px;
 }

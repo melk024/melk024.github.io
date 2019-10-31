@@ -147,7 +147,7 @@ function cartLoad() {
 	
 	var products = JSON.parse(localStorage.getItem("productsList"));
 	
-	if(products === null){		
+	if(products === null || products.length == 0){		
 		var cartLabel = document.createElement("div");
 		cartLabel.className = "bigItem";
 		cartLabel.innerHTML = "Your cart is currently empty. Please visit the shop to add items.";
@@ -159,8 +159,7 @@ function cartLoad() {
 		//loop through each element in products
 		//take name, glaze, number, and picture
 		//create cart item
-		//appendChild to mini cart div
-		//copy above instruction to work on the cart page as well
+		//appendChild to cart div
 		
 		var i;
 		for(i = 0; i<products.length; i++){
