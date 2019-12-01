@@ -11,17 +11,64 @@ body, html {
 	background-size: cover;
 }
 
+#intro {
+	margin: auto;
+	background-color: white;
+	width: 80%;
+	max-width: 750px;
+	height: 80%;
+	max-height: 400px;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	left: 50%;
+	top: 50%;
+	margin-top: 30px;
+}
+
 #prelude {
 	height: 100%;
+	padding-top: 70px;
 }
 
 .event{
 	background-color: orange;
 	width: 80%;
-	height: 20%;
+	height: 25%;
 	margin: auto;
+	cursor: pointer;
 }
 
 #gulltown {
 	height: 100%;
+	padding-top: 70px;
+}
+
+#summerhall {
+	height: 100%;
+	padding-top: 70px;
+}
+
+#ashford {
+	height: 100%;
+	padding-top: 70px;
+}
+
+#bells {
+	height: 100%;
+	padding-top: 70px;
+}
+
+#trident {
+	height: 100%;
+	padding-top: 70px;
+}
+
+#sack {
+	height: 100%;
+	padding-top: 70px;
+}
+
+#aftermath {
+	height: 100%;
+	padding-top: 70px;
 }
