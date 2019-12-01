@@ -1,0 +1,16 @@
+body {
+	font-size: 12px;
+}
+
+#home {
+	background-image: url(Assets/Images/Header.jpg);
+	height: 750px;
+	background-attachment: fixed;
+	background-position: 55% 50%;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#prelude {
+	height: 750px;
+}
