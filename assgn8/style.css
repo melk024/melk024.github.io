@@ -52,19 +52,15 @@ body, html {
 	display: inline;
 	overflow: hidden;
 	
-	background-image: url(Assets/Images/TargetPractice.png);
+	/*background-image: url(Assets/Images/Gulltown.png);
 	background-repeat: no-repeat;
 	background-position: right center;
-	background-size: 115% auto;
+	background-size: 200% auto;*/
 }
 
 .forces img {
-	height: 100%;
 	float: right;
-	position: relative;
-	z-index: -1;
-	left: 0px;
-	top: 0px;
+	width: 200%;
 }
 
 .info {
@@ -75,19 +71,27 @@ body, html {
 	background-color: white;
 }
 
-.baratheon {
+.gullBaratheon:hover {
+	cursor: pointer;
+	border: 3px solid blue;
+}
+
+#gull1 {
 	width: 25px;
 	height: 25px;
 	border-radius: 25px;
-	background-color: yellow;
-	margin-left: -40px;
+	margin-left: 33%;
 	margin-top: 30px;
 	
 	position: relative;
 	top: 50%;
 	left: 50%;
 	z-index: 2;
+}
+
+.baratheon {
 	
+	background-color: yellow;	
 }
 
 #summerhall {
