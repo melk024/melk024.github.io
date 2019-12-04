@@ -28,6 +28,7 @@ body, html {
 #prelude {
 	height: 100%;
 	padding-top: 70px;
+	background-color: red;
 }
 
 .event{
@@ -36,39 +37,91 @@ body, html {
 	height: 25%;
 	margin: auto;
 	cursor: pointer;
+	margin-top: 2%;
 }
 
 #gulltown {
 	height: 100%;
+}
+
+.forces {
+	height: 100%;
+	width: 60%;
+	border: 2px solid black;
+	float: left;
+	display: inline;
+	overflow: hidden;
+	
+	background-image: url(Assets/Images/TargetPractice.png);
+	background-repeat: no-repeat;
+	background-position: right center;
+	background-size: 115% auto;
+}
+
+.forces img {
+	height: 100%;
+	float: right;
+	position: relative;
+	z-index: -1;
+	left: 0px;
+	top: 0px;
+}
+
+.info {
+	height: 100%;
 	padding-top: 70px;
+	width: 40%;
+	float: right;
+	background-color: white;
+}
+
+.baratheon {
+	width: 25px;
+	height: 25px;
+	border-radius: 25px;
+	background-color: yellow;
+	margin-left: -40px;
+	margin-top: 30px;
+	
+	position: relative;
+	top: 50%;
+	left: 50%;
+	z-index: 2;
+	
 }
 
 #summerhall {
 	height: 100%;
 	padding-top: 70px;
+	background-color: yellow;
 }
 
 #ashford {
 	height: 100%;
 	padding-top: 70px;
+	background-color: green;
 }
 
 #bells {
 	height: 100%;
 	padding-top: 70px;
+	background-color: blue;
 }
 
 #trident {
 	height: 100%;
 	padding-top: 70px;
+	background-color: purple;
 }
 
 #sack {
 	height: 100%;
 	padding-top: 70px;
+	background-color: pink;
 }
 
 #aftermath {
 	height: 100%;
 	padding-top: 70px;
+	background-color: gray;
 }
