@@ -59,7 +59,7 @@ body, html {
 	background-size: 200% auto;*/
 }
 
-.map {
+#gullMap {
 	float: right;
 	width: 200%;
 }
@@ -79,6 +79,18 @@ body, html {
 	transform: translate(-50%, -50%);
 	left: 50%;
 	top: 45%;
+}
+
+.play {
+	margin: auto;
+	width: 20%;
+	max-width: 150px;
+	position: relative;
+	top: 50%;
+	transform: translate(-100%, -50%);
+	background-color: orange;
+	border: none;
+	border-radius: 3px;
 }
 
 #summerhall {

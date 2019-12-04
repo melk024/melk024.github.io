@@ -15,6 +15,10 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	
+	<!--Scripts-->
+	<!--Anime--><script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>
+	<script src="script.js"></script>
 
 </head>
 
@@ -76,10 +80,11 @@
 	
 	<div id="gulltown" class="container-fluid">
 		<div class="forces">
-			<object class="map" type="image/svg+xml" data="Assets/Images/Gulltown.svg"></object>
+			<object id="gullMap" type="image/svg+xml" data="Assets/Images/Gulltown.svg"></object>
 		</div>
 		<div class="info">
 			<img src="Assets/Images/GullTitle.png" />
+			<button class="play" onClick="playGulltown()">Play</button>
 		</div>
 	</div>
 	
