@@ -1,10 +1,10 @@
 function playGulltown() {
-	var bGull = document.getElementById("gullMap").contentDocument;
-	console.log(bGull);
+	var title = document.getElementById("gullTitle");
+	title.style.top = "10%";
 	
-	//.getElementsByClassName("baratheon");
-	//for(i=0; i<bGull.length; i++){
-	//	bGull[i].setAttribute("stroke", "black");
-	//}
+	var bGull = document.getElementById("gullMap").contentDocument.getElementsByClassName("baratheon");
+	for(i=0; i<bGull.length; i++){
+		bGull[i].setAttribute("stroke", "black");
+	}
 }
 	
