@@ -10,7 +10,9 @@ function playGulltown() {
 	var bGull = document.getElementById("gullMap").contentDocument.getElementsByClassName("baratheon");
 	anime ({
 		targets: bGull,
-		translateX: +=45,
+		translateX: {
+			value: '+=45',
+		duration: 2000},
 	});
 	
 	//fill info innerHTML with info about the battle
