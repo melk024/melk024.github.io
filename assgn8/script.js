@@ -88,7 +88,7 @@ function gulltownB() {
 		})
 		
 	
-	document.getElementsByClassName("content")[0].innerHTML = "<p>Commander: Robert Baratheon<br>Alliance: The Rebellion</p><p>While housed in the Eyrie, Robert was protected under Lord John Arryn's wardship. When the King called on Lord Arryn to send the heads of Robert and his fellow ward, Eddard Stark, to King's Landing, Arryn refused and called his men to arms.</p><p>Robert led a selection of men throughough the port city of Gulltown, eventually slaying the leader of the Royalists. Once Lord Marq Grafton fell, Robert left the Vale and ventured back east to collect his own bannermen from the Stormlands.</p><p>Outcome: Victorious</p>";
+	document.getElementsByClassName("content")[0].innerHTML = "<p>Commander: Robert Baratheon<br>Alliance: The Rebellion</p><p>While housed in the Eyrie, Robert was protected under Lord Jon Arryn's wardship. When the King called on Lord Arryn to send the heads of Robert and his fellow ward, Eddard Stark, to King's Landing, Arryn refused and called his men to arms.</p><p>Robert led a selection of men throughough the port city of Gulltown, eventually slaying the leader of the Royalists. Once Lord Marq Grafton fell, Robert left the Vale and ventured back east to collect his own bannermen from the Stormlands.</p><p>Outcome: Victorious</p>";
 }
 
 function gulltownA() {
@@ -172,6 +172,10 @@ function playSummerhall() {
 	content.style.opacity = "1.0";
 	content.style.top = "0%";
 	
+	var troops = document.getElementsByClassName("troops")[1];
+	troops.style.opacity = "1.0";
+	troops.style.top = "5%";
+	
 	//animate troop icons on the map
 	var map = Snap('#summerMap');
 	
@@ -205,6 +209,54 @@ function playSummerhall() {
 
 }
 
+function summerhallB() {	
+	var map = Snap('#summerMap');
+	
+	summerhallReset();
+	
+	var bSummer = map.selectAll(".baratheon"); //get array of all troops			
+		bSummer.attr({
+			stroke: "#000",
+			strokeWidth: 3
+		})
+		
+	
+	document.getElementsByClassName("content")[1].innerHTML = "Baratheon boiii";
+}
+
+function summerhallR() {	
+	var map = Snap('#summerMap');
+	
+	summerhallReset();
+	
+	var rSummer = map.selectAll(".loyal"); //get array of all troops			
+		rSummer.attr({
+			stroke: "#000",
+			strokeWidth: 3
+		})
+		
+	
+	document.getElementsByClassName("content")[1].innerHTML = "mad king rights";
+}
+
+function summerhallReset() {	
+	var map = Snap('#summerMap');
+		
+	var bSummer = map.selectAll(".baratheon"); //get array of all troops			
+		bSummer.attr({
+			strokeWidth: 0
+		})
+		
+	var rSummer = map.selectAll(".loyal"); //get array of all troops			
+		rSummer.attr({
+			strokeWidth: 0
+		})
+		
+	
+	document.getElementsByClassName("content")[1].innerHTML = "<p>Year: 282 AD<br>Location: Summerhall<br>Outcome: Rebel Victory</p><p>Rebel Commanders:<br>Robert Baratheon<br>Rebel houses of the Stormlands</p><p>Royalist Commanders:<br>Lord Cafferen<br>Lord Fell<br>Lord Grandison</p><p>Impact: With the loyalist storm lords defeated, Robert consolidated his power in the Stormlands, allowing him to march west without the threat of enemy persual from behind.</p>";
+}
+
+
 function playAshford() {
 	//move title up to reveal information about the battle	
 	var title = document.getElementById("ashTitle");
@@ -217,6 +269,10 @@ function playAshford() {
 	var content = document.getElementsByClassName("content")[2];
 	content.style.opacity = "1.0";
 	content.style.top = "0%";
+	
+	var troops = document.getElementsByClassName("troops")[2];
+	troops.style.opacity = "1.0";
+	troops.style.top = "5%";
 	
 	//animate troop icons on the map
 	var map = Snap('#ashMap');
@@ -249,4 +305,51 @@ function playAshford() {
 			1500);
 	}
 
+}
+
+function ashfordB() {	
+	var map = Snap('#ashMap');
+	
+	ashfordReset();
+	
+	var bAsh = map.selectAll(".baratheon"); //get array of all troops			
+		bAsh.attr({
+			stroke: "#000",
+			strokeWidth: 3
+		})
+		
+	
+	document.getElementsByClassName("content")[2].innerHTML = "Baratheon boiii";
+}
+
+function ashfordT() {	
+	var map = Snap('#ashMap');
+	
+	ashfordReset();
+	
+	var tAsh = map.selectAll(".tarly"); //get array of all troops			
+		tAsh.attr({
+			stroke: "#000",
+			strokeWidth: 3
+		})
+		
+	
+	document.getElementsByClassName("content")[2].innerHTML = "mad king rights";
+}
+
+function ashfordReset() {	
+	var map = Snap('#ashMap');
+		
+	var bAsh = map.selectAll(".baratheon"); //get array of all troops			
+		bAsh.attr({
+			strokeWidth: 0
+		})
+		
+	var tAsh = map.selectAll(".tarly"); //get array of all troops			
+		tAsh.attr({
+			strokeWidth: 0
+		})
+		
+	
+	document.getElementsByClassName("content")[2].innerHTML = "<p>Year: 282 AD<br>Location: Ashford<br>Outcome: Royalist Victory</p><p>Rebel Commanders:<br>Robert Baratheon</p><p>Royalist Commanders:<br>Mace Tyrell<br>Randyll Tarly</p><p>Impact: Robert retreated when faced with the much larger Tyrell force. This allowed Mace Tyrell to invade the Stormlands and lay seige to Storm's End.</p>";
 }

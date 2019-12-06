@@ -159,17 +159,18 @@
 				<p>Rebel Commanders:<br>
 				Robert Baratheon<br>
 				Rebel houses of the Stormlands</p>
-				<p>Loyalist Commanders:<br>
+				<p>Royalist Commanders:<br>
 				Lord Cafferen<br>
 				Lord Fell<br>
 				Lord Grandison</p>
 				<p>Impact: With the loyalist storm lords defeated, Robert consolidated his power in the Stormlands,
 				allowing him to march west without the threat of enemy persual from behind.</p>
-				<br>
-				<p>Click to view troop information</p>
-				<div class="troops">
-					i'll figure this out later
-				</div>
+			</div>
+			<div class="troops">
+			<p>Click to view troop information</p>
+				<button class="troop" onclick="summerhallB()" style="background-image: url(Assets/Images/Baratheon.png)"></button>
+				<button class="troop" onclick="summerhallR()" style="background-image: url(Assets/Images/Royalist.png)"></button>
+				<button class="troop" onclick="summerhallReset()" style="background-image: url(Assets/Images/Reset.png)"></button>
 			</div>
 		</div>
 	</div>
@@ -206,7 +207,7 @@
 			<button class="play" onClick="playAshford()">Play</button>
 			<div class="content">
 				<p>Year: 282 AD<br>
-				Location: Gulltown<br>
+				Location: Ashford<br>
 				Outcome: Royalist Victory</p>
 				<p>Rebel Commanders:<br>
 				Robert Baratheon</p>
@@ -214,17 +215,16 @@
 				Mace Tyrell<br>
 				Randyll Tarly</p>
 				<p>Impact: Robert retreated when faced with the much larger Tyrell force. This allowed Mace Tyrell to invade the Stormlands and lay seige to Storm's End.</p>
-				<br>
-				<p>Click to view troop information</p>
-				<div class="troops">
-					i'll figure this out later
-				</div>
+			</div>
+			<div class="troops">
+			<p>Click to view troop information</p>
+				<button class="troop" onclick="ashfordB()" style="background-image: url(Assets/Images/Baratheon.png)"></button>
+				<button class="troop" onclick="ashfordT()" style="background-image: url(Assets/Images/Tyrell.png)"></button>
+				<button class="troop" onclick="ashfordReset()" style="background-image: url(Assets/Images/Reset.png)"></button>
 			</div>
 		</div>
 	</div>
 	
-	
-	<!--FINISH: 12/6 @ 3AM-->
 	<div id="bells" class="container-fluid">
 		<div class="forces">
 			<!--SVG file begins-->
@@ -243,8 +243,8 @@
 		</div>
 		<div class="info">
 			
-			<img id="gullTitle" src="Assets/Images/GullTitle.png" />
-			<button class="play" onClick="playGulltown()">Play</button>
+			<img id="gullTitle" src="Assets/Images/BellsTitle.png" />
+			<button class="play" onClick="playBells()">Play</button>
 			<div class="content">
 				<p>Year: 282 AD<br>
 				Location: Gulltown<br>
@@ -267,40 +267,22 @@
 	<div id="trident" class="container-fluid">
 		<div class="forces">
 			<!--SVG file begins-->
-			<svg id="gullMap" width="1746" height="1792" viewBox="0 500 1746 1792" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+			<svg id="tridentMap" width="1746" height="1792" viewBox="0 600 1046 1792" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 				<rect width="1746" height="1792" fill="#E5E5E5"/>
-				<rect width="1746" height="1792" fill="url(#pattern0)"/>
-
-				<circle class="stark" cx="1200" cy="760" r="15" fill="#7F7F7F"/>
-				<circle class="stark" cx="1240" cy="730" r="15" fill="#7F7F7F"/>
-				<circle class="stark" cx="1160" cy="775" r="15" fill="#7F7F7F"/>
-				<circle class="stark" cx="1200" cy="720" r="15" fill="#7F7F7F"/>
-				<circle class="stark" cx="1170" cy="740" r="15" fill="#7F7F7F"/>
-				<circle class="stark" cx="1160" cy="700" r="15" fill="#7F7F7F"/>
-				
-				<circle class="baratheon" cx="1517" cy="974" r="15" fill="#FFC700"/>
-				<circle class="baratheon" cx="1567" cy="954" r="15" fill="#FFC700"/>
-				<circle class="baratheon" cx="1477" cy="1000" r="15" fill="#FFC700"/>
-				
-				<circle class="arryn" cx="1300" cy="860" r="15" fill="#1078C5"/>
-				<circle class="arryn" cx="1285" cy="900" r="15" fill="#1078C5"/>
-				<circle class="arryn" cx="1245" cy="910" r="15" fill="#1078C5"/>
-
-				<circle class="grafton" cx="1557" cy="1000" r="15" fill="#DC4024"/>
-				<circle class="grafton" cx="1617" cy="980" r="15" fill="#DC4024"/>
+				<rect width="1746" height="1792" fill="url(#pattern4)"/>
 
 				<defs>
-				<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-				<use xlink:href="#image0" transform="scale(0.000572738)"/>
+				<pattern id="pattern4" patternContentUnits="objectBoundingBox" width="1" height="1">
+				<use xlink:href="#image4" transform="scale(0.000572738)"/>
 				</pattern>
-				<image id="image0" width="1746" height="1792" xlink:href="Assets/Images/Gulltown.png"/>
+				<image id="image4" width="1746" height="1792" xlink:href="Assets/Images/Trident.png"/>
 				</defs>
 			</svg>
 			<!--SVG file ends-->
 		</div>
 		<div class="info">
 			
-			<img id="gullTitle" src="Assets/Images/GullTitle.png" />
+			<img id="tridentTitle" src="Assets/Images/TridentTitle.png" />
 			<button class="play" onClick="playGulltown()">Play</button>
 			<div class="content">
 				<p>Year: 282 AD<br>
@@ -324,40 +306,22 @@
 	<div id="sack" class="container-fluid">
 		<div class="forces">
 			<!--SVG file begins-->
-			<svg id="gullMap" width="1746" height="1792" viewBox="0 500 1746 1792" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+			<svg id="sackMap" width="1746" height="1792" viewBox="0 500 1146 1792" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 				<rect width="1746" height="1792" fill="#E5E5E5"/>
-				<rect width="1746" height="1792" fill="url(#pattern0)"/>
-
-				<circle class="stark" cx="1200" cy="760" r="15" fill="#7F7F7F"/>
-				<circle class="stark" cx="1240" cy="730" r="15" fill="#7F7F7F"/>
-				<circle class="stark" cx="1160" cy="775" r="15" fill="#7F7F7F"/>
-				<circle class="stark" cx="1200" cy="720" r="15" fill="#7F7F7F"/>
-				<circle class="stark" cx="1170" cy="740" r="15" fill="#7F7F7F"/>
-				<circle class="stark" cx="1160" cy="700" r="15" fill="#7F7F7F"/>
-				
-				<circle class="baratheon" cx="1517" cy="974" r="15" fill="#FFC700"/>
-				<circle class="baratheon" cx="1567" cy="954" r="15" fill="#FFC700"/>
-				<circle class="baratheon" cx="1477" cy="1000" r="15" fill="#FFC700"/>
-				
-				<circle class="arryn" cx="1300" cy="860" r="15" fill="#1078C5"/>
-				<circle class="arryn" cx="1285" cy="900" r="15" fill="#1078C5"/>
-				<circle class="arryn" cx="1245" cy="910" r="15" fill="#1078C5"/>
-
-				<circle class="grafton" cx="1557" cy="1000" r="15" fill="#DC4024"/>
-				<circle class="grafton" cx="1617" cy="980" r="15" fill="#DC4024"/>
+				<rect width="1746" height="1792" fill="url(#pattern5)"/>
 
 				<defs>
-				<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
-				<use xlink:href="#image0" transform="scale(0.000572738)"/>
+				<pattern id="pattern5" patternContentUnits="objectBoundingBox" width="1" height="1">
+				<use xlink:href="#image5" transform="scale(0.000572738)"/>
 				</pattern>
-				<image id="image0" width="1746" height="1792" xlink:href="Assets/Images/Gulltown.png"/>
+				<image id="image5" width="1746" height="1792" xlink:href="Assets/Images/Sack.png"/>
 				</defs>
 			</svg>
 			<!--SVG file ends-->
 		</div>
 		<div class="info">
 			
-			<img id="gullTitle" src="Assets/Images/GullTitle.png" />
+			<img id="sackTitle" src="Assets/Images/SackTitle.png" />
 			<button class="play" onClick="playGulltown()">Play</button>
 			<div class="content">
 				<p>Year: 282 AD<br>

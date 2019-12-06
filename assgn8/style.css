@@ -148,6 +148,14 @@ p {
 	height: 100%;
 }
 
+#tridentMap {
+	float: right;
+}
+
 #sack {
 	height: 100%;
+}
+
+#sackMap {
+	float: right;
 }
