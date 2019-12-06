@@ -353,3 +353,518 @@ function ashfordReset() {
 	
 	document.getElementsByClassName("content")[2].innerHTML = "<p>Year: 282 AD<br>Location: Ashford<br>Outcome: Royalist Victory</p><p>Rebel Commanders:<br>Robert Baratheon</p><p>Royalist Commanders:<br>Mace Tyrell<br>Randyll Tarly</p><p>Impact: Robert retreated when faced with the much larger Tyrell force. This allowed Mace Tyrell to invade the Stormlands and lay seige to Storm's End.</p>";
 }
+
+function playBells() {
+	//move title up to reveal information about the battle	
+	var title = document.getElementById("bellsTitle");
+	title.style.top = "10%"; 
+	
+	var play = document.getElementsByClassName("play")[3];
+	play.style.top = "90%";
+	play.style.opacity = "0.0";
+	
+	var content = document.getElementsByClassName("content")[3];
+	content.style.opacity = "1.0";
+	content.style.top = "0%";
+	
+	var troops = document.getElementsByClassName("troops")[3];
+	troops.style.opacity = "1.0";
+	troops.style.top = "5%";
+	
+	//animate troop icons on the map
+	var map = Snap('#bellsMap');
+	
+	var bBells = map.selectAll(".baratheon"); //get array of all troops
+	for(i=0; i<bBells.length; i++){
+		var currentX = bBells[i].attr("cx"); //get current x value
+		var newX = parseInt(currentX)+75; //subtract 160
+		
+		var currentY = bBells[i].attr("cy"); //get current y value
+		var newY = parseInt(currentY)-100; //subtract 50
+		
+		bBells[i].animate(
+			{cx: newX,
+			cy: newY},
+			2000); //use Snap to animate
+	}
+	
+	var sBells = map.selectAll(".stark");
+	for(i=0; i<sBells.length; i++){
+		var currentX = sBells[i].attr("cx");
+		var newX = parseInt(currentX)+20;
+		
+		var currentY = sBells[i].attr("cy");
+		var newY = parseInt(currentY)+230;
+		
+		sBells[i].animate(
+			{cx: newX,
+			cy: newY},
+			1500);
+	}
+	
+	var tBells = map.selectAll(".tully");
+	for(i=0; i<tBells.length; i++){
+		var currentX = tBells[i].attr("cx");
+		var newX = parseInt(currentX)+20;
+		
+		var currentY = tBells[i].attr("cy");
+		var newY = parseInt(currentY)+230;
+		
+		tBells[i].animate(
+			{cx: newX,
+			cy: newY},
+			1500);
+	}
+	
+	var cBells = map.selectAll(".connington");
+	for(i=0; i<cBells.length; i++){
+		var currentX = cBells[i].attr("cx");
+		var newX = parseInt(currentX)-200;
+		
+		var currentY = cBells[i].attr("cy");
+		var newY = parseInt(currentY)-100;
+		
+		cBells[i].animate(
+			{cx: newX,
+			cy: newY},
+			1000);
+	}
+
+}
+
+function bellsB() {	
+	var map = Snap('#bellsMap');
+	
+	bellsReset();
+	
+	var bBells = map.selectAll(".baratheon"); //get array of all troops			
+		bBells.attr({
+			stroke: "#000",
+			strokeWidth: 3
+		})
+		
+	
+	document.getElementsByClassName("content")[3].innerHTML = "baratheon boi";
+}
+
+function bellsT() {
+	var map=Snap('#bellsMap');
+	
+	bellsReset();
+	
+	var tBells = map.selectAll(".tully"); //get array of all troops			
+		tBells.attr({
+			stroke: "#000",
+			strokeWidth: 3
+		})
+	
+	document.getElementsByClassName("content")[3].innerHTML="fish shit";
+}
+
+function bellsS() {
+	var map=Snap('#bellsMap');
+	
+	bellsReset();
+	
+	var sBells = map.selectAll(".stark"); //get array of all troops			
+		sBells.attr({
+			stroke: "#000",
+			strokeWidth: 3
+		})
+		
+	document.getElementsByClassName("content")[3].innerHTML="wolfy";
+}
+
+function bellsC() {
+	var map=Snap('#bellsMap');
+	
+	bellsReset();
+	
+	var cBells = map.selectAll(".connington"); //get array of all troops			
+		cBells.attr({
+			stroke: "#000",
+			strokeWidth: 3
+		})
+		
+	document.getElementsByClassName("content")[3].innerHTML="silver prince rights";
+}
+
+function bellsReset() {	
+var map = Snap('#bellsMap');
+	
+	var bBells = map.selectAll(".baratheon"); //get array of all troops			
+		bBells.attr({
+			strokeWidth: 0
+		})
+	
+	var tBells = map.selectAll(".tully"); //get array of all troops			
+		tBells.attr({
+			strokeWidth: 0
+		})
+	
+	var sBells = map.selectAll(".stark"); //get array of all troops			
+		sBells.attr({
+			strokeWidth: 0
+		})
+	
+	var cBells = map.selectAll(".connington"); //get array of all troops			
+		cBells.attr({
+			strokeWidth: 0
+		})
+	
+	document.getElementsByClassName("content")[3].innerHTML="reset";
+}
+
+function playTrident() {
+	//move title up to reveal information about the battle	
+	var title = document.getElementById("tridentTitle");
+	title.style.top = "10%"; 
+	
+	var play = document.getElementsByClassName("play")[4];
+	play.style.top = "90%";
+	play.style.opacity = "0.0";
+	
+	var content = document.getElementsByClassName("content")[4];
+	content.style.opacity = "1.0";
+	content.style.top = "0%";
+	
+	var troops = document.getElementsByClassName("troops")[4];
+	troops.style.opacity = "1.0";
+	troops.style.top = "5%";
+	
+	//animate troop icons on the map
+	var map = Snap('#tridentMap');
+	
+	var bTrident = map.selectAll(".baratheon"); //get array of all troops
+	for(i=0; i<bTrident.length; i++){
+		var currentX = bTrident[i].attr("cx"); //get current x value
+		var newX = parseInt(currentX)+120; //subtract 160
+		
+		var currentY = bTrident[i].attr("cy"); //get current y value
+		var newY = parseInt(currentY)-120; //subtract 50
+		
+		bTrident[i].animate(
+			{cx: newX,
+			cy: newY},
+			1500); //use Snap to animate
+	}
+	
+	var sTrident = map.selectAll(".stark");
+	for(i=0; i<sTrident.length; i++){
+		var currentX = sTrident[i].attr("cx");
+		var newX = parseInt(currentX)+120;
+		
+		var currentY = sTrident[i].attr("cy");
+		var newY = parseInt(currentY)-120;
+		
+		sTrident[i].animate(
+			{cx: newX,
+			cy: newY},
+			1500);
+	}
+	
+	var tTrident = map.selectAll(".tully");
+	for(i=0; i<tTrident.length; i++){
+		var currentX = tTrident[i].attr("cx");
+		var newX = parseInt(currentX)+120;
+		
+		var currentY = tTrident[i].attr("cy");
+		var newY = parseInt(currentY)-120;
+		
+		tTrident[i].animate(
+			{cx: newX,
+			cy: newY},
+			1500);
+	}
+	
+	var aTrident = map.selectAll(".arryn");
+	for(i=0; i<aTrident.length; i++){
+		var currentX = aTrident[i].attr("cx");
+		var newX = parseInt(currentX)+120;
+		
+		var currentY = aTrident[i].attr("cy");
+		var newY = parseInt(currentY)-120;
+		
+		aTrident[i].animate(
+			{cx: newX,
+			cy: newY},
+			1500);
+	}
+	
+	var rTrident = map.selectAll(".targaryen");
+	for(i=0; i<rTrident.length; i++){
+		var currentX = rTrident[i].attr("cx");
+		var newX = parseInt(currentX)-20;
+		
+		var currentY = rTrident[i].attr("cy");
+		var newY = parseInt(currentY)+60;
+		
+		rTrident[i].animate(
+			{cx: newX,
+			cy: newY},
+			1500);
+	}
+	
+	var mTrident = map.selectAll(".martell");
+	for(i=0; i<mTrident.length; i++){
+		var currentX = mTrident[i].attr("cx");
+		var newX = parseInt(currentX)-20;
+		
+		var currentY = mTrident[i].attr("cy");
+		var newY = parseInt(currentY)+60;
+		
+		mTrident[i].animate(
+			{cx: newX,
+			cy: newY},
+			1000);
+	}
+
+}
+
+function tridentB() {	
+	var map = Snap('#tridentMap');
+	
+	tridentReset();
+	
+	var bTrident = map.selectAll(".baratheon"); //get array of all troops			
+		bTrident.attr({
+			stroke: "#000",
+			strokeWidth: 3
+		})
+		
+	
+	document.getElementsByClassName("content")[4].innerHTML = "baratheon boi";
+}
+
+function tridentT() {
+	var map=Snap('#tridentMap');
+	
+	tridentReset();
+	
+	var tTrident = map.selectAll(".tully"); //get array of all troops			
+		tTrident.attr({
+			stroke: "#000",
+			strokeWidth: 3
+		})
+	
+	document.getElementsByClassName("content")[4].innerHTML="fish shit";
+}
+
+function tridentS() {
+	var map=Snap('#tridentMap');
+	
+	tridentReset();
+	
+	var sTrident = map.selectAll(".stark"); //get array of all troops			
+		sTrident.attr({
+			stroke: "#000",
+			strokeWidth: 3
+		})
+		
+	document.getElementsByClassName("content")[4].innerHTML="wolfy";
+}
+
+function tridentA() {
+	var map=Snap('#tridentMap');
+	
+	tridentReset();
+	
+	var aTrident = map.selectAll(".arryn"); //get array of all troops			
+		aTrident.attr({
+			stroke: "#000",
+			strokeWidth: 3
+		})
+		
+	document.getElementsByClassName("content")[4].innerHTML="caw";
+}
+
+function tridentR() {
+	var map=Snap('#tridentMap');
+	
+	tridentReset();
+	
+	var rTrident = map.selectAll(".targaryen"); //get array of all troops			
+		rTrident.attr({
+			stroke: "#000",
+			strokeWidth: 3
+		})
+		
+	document.getElementsByClassName("content")[4].innerHTML="silver prince wrongs";
+}
+
+function tridentM() {
+	var map=Snap('#tridentMap');
+	
+	tridentReset();
+	
+	var mTrident = map.selectAll(".martell"); //get array of all troops			
+		mTrident.attr({
+			stroke: "#000",
+			strokeWidth: 3
+		})
+		
+	document.getElementsByClassName("content")[4].innerHTML="unbent";
+}
+
+function tridentReset() {	
+var map = Snap('#tridentMap');
+	
+	var bTrident = map.selectAll(".baratheon"); //get array of all troops			
+		bTrident.attr({
+			strokeWidth: 0
+		})
+	
+	var tTrident = map.selectAll(".tully"); //get array of all troops			
+		tTrident.attr({
+			strokeWidth: 0
+		})
+	
+	var sTrident = map.selectAll(".stark"); //get array of all troops			
+		sTrident.attr({
+			strokeWidth: 0
+		})
+	
+	var aTrident = map.selectAll(".arryn"); //get array of all troops			
+		aTrident.attr({
+			strokeWidth: 0
+		})
+		
+	var rTrident = map.selectAll(".targaryen"); //get array of all troops			
+		rTrident.attr({
+			strokeWidth: 0
+		})
+		
+	var mTrident = map.selectAll(".martell"); //get array of all troops			
+		mTrident.attr({
+			strokeWidth: 0
+		})
+	
+	document.getElementsByClassName("content")[4].innerHTML="reset";
+}
+
+function playSack() {
+	//move title up to reveal information about the battle	
+	var title = document.getElementById("sackTitle");
+	title.style.top = "10%"; 
+	
+	var play = document.getElementsByClassName("play")[5];
+	play.style.top = "90%";
+	play.style.opacity = "0.0";
+	
+	var content = document.getElementsByClassName("content")[5];
+	content.style.opacity = "1.0";
+	content.style.top = "0%";
+	
+	var troops = document.getElementsByClassName("troops")[5];
+	troops.style.opacity = "1.0";
+	troops.style.top = "5%";
+	
+	//animate troop icons on the map
+	var map = Snap('#sackMap');
+	
+	var sSack = map.selectAll(".stark"); //get array of all troops
+	for(i=0; i<sSack.length; i++){
+		var currentX = sSack[i].attr("cx"); //get current x value
+		var newX = parseInt(currentX)+20; //subtract 160
+		
+		var currentY = sSack[i].attr("cy"); //get current y value
+		var newY = parseInt(currentY)+230; //subtract 50
+		
+		sSack[i].animate(
+			{cx: newX,
+			cy: newY},
+			1500); //use Snap to animate
+	}
+	
+	var lSack = map.selectAll(".lannister");
+	for(i=0; i<lSack.length; i++){
+		var currentX = lSack[i].attr("cx");
+		var newX = parseInt(currentX)+15;
+		
+		var currentY = lSack[i].attr("cy");
+		var newY = parseInt(currentY)+30;
+		
+		lSack[i].animate(
+			{cx: newX,
+			cy: newY},
+			1000);
+	}
+	
+	var tSack = map.selectAll(".targaryen");
+	for(i=0; i<lSack.length; i++){
+		var currentX = tSack[i].attr("cx");
+		var newX = parseInt(currentX)+15;
+		
+		var currentY = tSack[i].attr("cy");
+		var newY = parseInt(currentY)-30;
+		
+		tSack[i].animate(
+			{cx: newX,
+			cy: newY},
+			1000);
+	}
+
+}
+
+function sackS() {
+	var map=Snap('#sackMap');
+	
+	sackReset();
+	
+	var sSack = map.selectAll(".stark"); //get array of all troops			
+		sSack.attr({
+			stroke: "#000",
+			strokeWidth: 3
+		})
+		
+	document.getElementsByClassName("content")[5].innerHTML="wolfy";
+}
+
+function sackL() {
+	var map=Snap('#sackMap');
+	
+	sackReset();
+	
+	var lSack = map.selectAll(".lannister"); //get array of all troops			
+		lSack.attr({
+			stroke: "#000",
+			strokeWidth: 3
+		})
+		
+	document.getElementsByClassName("content")[5].innerHTML="rawr";
+}
+
+function sackT() {
+	var map=Snap('#sackMap');
+	
+	sackReset();
+	
+	var tSack = map.selectAll(".targaryen"); //get array of all troops			
+		tSack.attr({
+			stroke: "#000",
+			strokeWidth: 3
+		})
+		
+	document.getElementsByClassName("content")[5].innerHTML="mad king wrongs";
+}
+
+function sackReset() {	
+var map = Snap('#sackMap');
+	
+	var sSack = map.selectAll(".stark"); //get array of all troops			
+		sSack.attr({
+			strokeWidth: 0
+		})
+	
+	var lSack = map.selectAll(".lannister"); //get array of all troops			
+		lSack.attr({
+			strokeWidth: 0
+		})
+		
+	var tSack = map.selectAll(".targaryen"); //get array of all troops			
+		tSack.attr({
+			strokeWidth: 0
+		})
+	
+	document.getElementsByClassName("content")[5].innerHTML="reset";
+}

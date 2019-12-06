@@ -232,6 +232,22 @@
 				<rect width="1746" height="1792" fill="#E5E5E5"/>
 				<rect width="1746" height="1792" fill="url(#pattern3)"/>
 
+				<circle class="baratheon" cx="700" cy="990" r="15" fill="#FFC700"/>
+				
+				<circle class="stark" cx="680" cy="710" r="15" fill="#7F7F7F"/>
+				<circle class="stark" cx="640" cy="760" r="15" fill="#7F7F7F"/>
+				<circle class="stark" cx="580" cy="705" r="15" fill="#7F7F7F"/>
+				
+				<circle class="tully" cx="710" cy="750" r="15" fill="#222053"/>
+				<circle class="tully" cx="630" cy="720" r="15" fill="#222053"/>
+				<circle class="tully" cx="590" cy="745" r="15" fill="#222053"/>
+				
+				<circle class="connington" cx="920" cy="1050" r="15" fill="#C30D0D"/>
+				<circle class="connington" cx="930" cy="1100" r="15" fill="#C30D0D"/>
+				<circle class="connington" cx="900" cy="1140" r="15" fill="#C30D0D"/>
+				<circle class="connington" cx="850" cy="1150" r="15" fill="#C30D0D"/>
+				<circle class="connington" cx="810" cy="1130" r="15" fill="#C30D0D"/>
+				
 				<defs>
 				<pattern id="pattern3" patternContentUnits="objectBoundingBox" width="1" height="1">
 				<use xlink:href="#image3" transform="scale(0.000572738)"/>
@@ -243,7 +259,7 @@
 		</div>
 		<div class="info">
 			
-			<img id="gullTitle" src="Assets/Images/BellsTitle.png" />
+			<img id="bellsTitle" src="Assets/Images/BellsTitle.png" />
 			<button class="play" onClick="playBells()">Play</button>
 			<div class="content">
 				<p>Year: 282 AD<br>
@@ -255,11 +271,14 @@
 				<p>Loyalist Commanders:<br>
 				Marc Grafton</p>
 				<p>Impact: Unified the Vale, secured safe passage north and south respectively for Lord Eddard Stark and Lord Robert Baratheon.</p>
-				<br>
+			</div>
+			<div class="troops">
 				<p>Click to view troop information</p>
-				<div class="troops">
-					i'll figure this out later
-				</div>
+				<button class="troop" onclick="bellsB()" style="background-image: url(Assets/Images/Baratheon.png)"></button>
+				<button class="troop" onclick="bellsT()" style="background-image: url(Assets/Images/Tully.png)"></button>
+				<button class="troop" onclick="bellsS()" style="background-image: url(Assets/Images/Stark.png)"></button>
+				<button class="troop" onclick="bellsC()" style="background-image: url(Assets/Images/Connington.png)"></button>
+				<button class="troop" onclick="bellsReset()" style="background-image: url(Assets/Images/Reset.png)"></button>
 			</div>
 		</div>
 	</div>
@@ -271,6 +290,33 @@
 				<rect width="1746" height="1792" fill="#E5E5E5"/>
 				<rect width="1746" height="1792" fill="url(#pattern4)"/>
 
+				<circle class="baratheon" cx="850" cy="1200" r="15" fill="#FFC700"/>
+				
+				<circle class="stark" cx="800" cy="1205" r="15" fill="#7F7F7F"/>
+				<circle class="stark" cx="850" cy="1290" r="15" fill="#7F7F7F"/>
+				<circle class="stark" cx="765" cy="1270" r="15" fill="#7F7F7F"/>
+				
+				<circle class="tully" cx="870" cy="1230" r="15" fill="#222053"/>
+				<circle class="tully" cx="790" cy="1240" r="15" fill="#222053"/>
+				<circle class="tully" cx="800" cy="1300" r="15" fill="#222053"/>
+				
+				<circle class="arryn" cx="830" cy="1250" r="15" fill="#1078C5"/>
+				<circle class="arryn" cx="760" cy="1215" r="15" fill="#1078C5"/>
+				
+				<circle class="targaryen" cx="1000" cy="1000" r="15" fill="#d02929"/>
+				<circle class="targaryen" cx="970" cy="950" r="15" fill="#d02929"/>
+				<circle class="targaryen" cx="1020" cy="960" r="15" fill="#d02929"/>
+				<circle class="targaryen" cx="1060" cy="940" r="15" fill="#d02929"/>
+				<circle class="targaryen" cx="1090" cy="985" r="15" fill="#d02929"/>
+				<circle class="targaryen" cx="975" cy="890" r="15" fill="#d02929"/>
+				<circle class="targaryen" cx="1095" cy="910" r="15" fill="#d02929"/>
+				<circle class="targaryen" cx="1055" cy="860" r="15" fill="#d02929"/>
+				
+				<circle class="martell" cx="1050" cy="990" r="15" fill="#EE8309"/>
+				<circle class="martell" cx="1000" cy="920" r="15" fill="#EE8309"/>
+				<circle class="martell" cx="1110" cy="955" r="15" fill="#EE8309"/>
+				<circle class="martell" cx="1035" cy="900" r="15" fill="#EE8309"/>
+				
 				<defs>
 				<pattern id="pattern4" patternContentUnits="objectBoundingBox" width="1" height="1">
 				<use xlink:href="#image4" transform="scale(0.000572738)"/>
@@ -283,7 +329,7 @@
 		<div class="info">
 			
 			<img id="tridentTitle" src="Assets/Images/TridentTitle.png" />
-			<button class="play" onClick="playGulltown()">Play</button>
+			<button class="play" onClick="playTrident()">Play</button>
 			<div class="content">
 				<p>Year: 282 AD<br>
 				Location: Gulltown<br>
@@ -294,11 +340,16 @@
 				<p>Loyalist Commanders:<br>
 				Marc Grafton</p>
 				<p>Impact: Unified the Vale, secured safe passage north and south respectively for Lord Eddard Stark and Lord Robert Baratheon.</p>
-				<br>
-				<p>Click to view troop information</p>
-				<div class="troops">
-					i'll figure this out later
-				</div>
+			</div>
+			<div class="troops">
+			<p>Click to view troop information</p>
+				<button class="troop" onclick="tridentB()" style="background-image: url(Assets/Images/Baratheon.png)"></button>
+				<button class="troop" onclick="tridentA()" style="background-image: url(Assets/Images/Arryn.png)"></button>
+				<button class="troop" onclick="tridentS()" style="background-image: url(Assets/Images/Stark.png)"></button>
+				<button class="troop" onclick="tridentT()" style="background-image: url(Assets/Images/Tully.png)"></button>
+				<button class="troop" onclick="tridentR()" style="background-image: url(Assets/Images/Targaryen.png)"></button>
+				<button class="troop" onclick="tridentM()" style="background-image: url(Assets/Images/Martell.png)"></button>
+				<button class="troop" onclick="tridentReset()" style="background-image: url(Assets/Images/Reset.png)"></button>
 			</div>
 		</div>
 	</div>
@@ -310,6 +361,19 @@
 				<rect width="1746" height="1792" fill="#E5E5E5"/>
 				<rect width="1746" height="1792" fill="url(#pattern5)"/>
 
+				<circle class="stark" cx="1100" cy="700" r="15" fill="#7F7F7F"/>
+				<circle class="stark" cx="1050" cy="680" r="15" fill="#7F7F7F"/>
+				<circle class="stark" cx="1130" cy="670" r="15" fill="#7F7F7F"/>
+				<circle class="stark" cx="1080" cy="640" r="15" fill="#7F7F7F"/>
+				
+				<circle class="targaryen" cx="1110" cy="970" r="15" fill="#d02929"/>
+				<circle class="targaryen" cx="1150" cy="990" r="15" fill="#d02929"/>
+				<circle class="targaryen" cx="1130" cy="1030" r="15" fill="#d02929"/>
+				
+				<circle class="lannister" cx="1120" cy="910" r="15" fill="#8e0100"/>
+				<circle class="lannister" cx="1080" cy="930" r="15" fill="#8e0100"/>
+				<circle class="lannister" cx="1160" cy="920" r="15" fill="#8e0100"/>
+				
 				<defs>
 				<pattern id="pattern5" patternContentUnits="objectBoundingBox" width="1" height="1">
 				<use xlink:href="#image5" transform="scale(0.000572738)"/>
@@ -322,7 +386,7 @@
 		<div class="info">
 			
 			<img id="sackTitle" src="Assets/Images/SackTitle.png" />
-			<button class="play" onClick="playGulltown()">Play</button>
+			<button class="play" onClick="playSack()">Play</button>
 			<div class="content">
 				<p>Year: 282 AD<br>
 				Location: Gulltown<br>
@@ -333,11 +397,13 @@
 				<p>Loyalist Commanders:<br>
 				Marc Grafton</p>
 				<p>Impact: Unified the Vale, secured safe passage north and south respectively for Lord Eddard Stark and Lord Robert Baratheon.</p>
-				<br>
+			</div>
+			<div class="troops">
 				<p>Click to view troop information</p>
-				<div class="troops">
-					i'll figure this out later
-				</div>
+				<button class="troop" onclick="sackS()" style="background-image: url(Assets/Images/Stark.png)"></button>
+				<button class="troop" onclick="sackL()" style="background-image: url(Assets/Images/Lannister.png)"></button>
+				<button class="troop" onclick="sackT()" style="background-image: url(Assets/Images/Targaryen.png)"></button>
+				<button class="troop" onclick="sackReset()" style="background-image: url(Assets/Images/Reset.png)"></button>
 			</div>
 		</div>
 	</div>
