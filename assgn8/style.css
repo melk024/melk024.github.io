@@ -4,15 +4,11 @@ body, html {
   color: white;
 }
 
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+p {
+	font-size: 1vw;
+	font-family: 'Martel', serif;
 }
 
-li {
-  display: inline;
-}
 
 #home {
 	background-image: url(Assets/Images/Header.jpg);
@@ -37,24 +33,6 @@ li {
 	margin-top: 30px;
 }
 
-#prelude {
-	height: 100%;
-	padding-top: 70px;
-}
-
-.event{
-	background-color: orange;
-	width: 80%;
-	height: 25%;
-	margin: auto;
-	cursor: pointer;
-	margin-top: 2%;
-}
-
-#gulltown {
-	height: 100%;
-}
-
 .forces {
 	height: 100%;
 	width: 60%;
@@ -63,84 +41,113 @@ li {
 	overflow: hidden;
 }
 
-#gullMap {
-	float: right;
-}
 
 .info {
 	height: 100%;
 	padding-top: 70px;
 	width: 40%;
 	float: right;
+	position: relative;
 }
 
 .info img {
 	margin: auto;
 	width: 60%;
 	max-width: 400px;
-	position: relative;
-	transform: translate(-50%, -50%);
-	left: 50%;
-	top: 45%;
 	transition: top 1.5s;
+	position: absolute;
+	top: 30%;
+	left: 19%;
+}
+
+.content {
+	height: auto;
+	width: 60%;
+	position: relative;
+	margin: auto;
+	z-index: -999;
+	background-color: white;
+	opacity: 0.0;
+	transition: opacity 1s, top 1.5s;
+	top: 10%;
+	padding-top: 30%;
+	padding-left: 2%;
+	padding-right: 2%;
+	padding-bottom: 2%;
+	text-align: center;
 }
 
 .play {
 	margin: auto;
 	width: 20%;
 	max-width: 150px;
-	position: relative;
-	top: 50%;
-	transform: translate(-100%, -50%);
+	position: absolute;
 	background-image: url(Assets/Images/Gold.jpg);
 	background-size: 100% auto;
 	border: none;
 	border-radius: 3px;
 	transition: top 1.5s, opacity 1.5s;
+	left: 40%;
+	top: 47%;
 }
 
 .troops {
 	margin: auto;
-	width: 20%;
-	max-width: 150px;
+	width: 60%;
 	position: relative;
-	transform: translate(-100%, -50%);
-	border: 1px solid white;
-	/* margin: auto;
-	width: 40%;
-	max-width: 300px;
-	border: 1px solid white;
-	position: absolute;
-	left: 50%;
-	transform: translate(-50%, -50%); */
+	opacity: 0;
+	transition: opacity 1.5s, top 1.5s;
+	text-align: center;
+	top: 15%;
+	color: white;
+}
+
+.troop {
+	margin: auto;
+	border: none;
+	border-radius: 3px;
+	display: inline-block;
+	width: 35px;
+	height: 35px;
+	background-size: 35px 35px;
+}
+
+#gulltown {
+	height: 100%;
+}
+
+#gullMap {
+	float: right;
 }
 
 #summerhall {
 	height: 100%;
-	padding-top: 70px;
+}
+
+#summerMap {
+	float: right;
 }
 
 #ashford {
 	height: 100%;
-	padding-top: 70px;
+}
+
+#ashMap {
+	float: right;
 }
 
 #bells {
 	height: 100%;
-	padding-top: 70px;
+}
+
+#bellsMap {
+	float: left;
 }
 
 #trident {
 	height: 100%;
-	padding-top: 70px;
 }
 
 #sack {
 	height: 100%;
-	padding-top: 70px;
-}
-
-#aftermath {
-	height: 100%;
-	padding-top: 70px;
 }

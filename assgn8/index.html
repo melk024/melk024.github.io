@@ -17,10 +17,11 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 	
 	<!--Scripts-->
-	<script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>
-	
 	<script src="Assets/Libraries/snap.svg-min.js"></script>
 	<script src="script.js" type="text/javascript"></script>
+	
+	<!--fonts-->
+	<link href="https://fonts.googleapis.com/css?family=Martel:300&display=swap" rel="stylesheet">
 
 </head>
 
@@ -34,9 +35,6 @@
 	  </button>
 	  <div class="collapse navbar-collapse" id="collapsibleNavbar">
 		<ul class="navbar-nav ml-auto w-100 justify-content-end">
-		  <li class="nav-item">
-			<a class="nav-link" href="#prelude">Prelude</a>
-		  </li>
 		  <li class="nav-item">
 			<a class="nav-link" href="#gulltown">Gulltown</a>
 		  </li>
@@ -54,10 +52,7 @@
 		  </li>
 		  <li class="nav-item">
 			<a class="nav-link" href="#sack">King's Landing</a>
-		  </li>
-		  <li class="nav-item">
-			<a class="nav-link" href="#aftermath">Aftermath</a>
-		  </li>    		  
+		  </li>  		  
 		</ul>
 	  </div>  
 	</nav>
@@ -67,22 +62,10 @@
 		<div id="intro">Welcome to my twisted mind</div>
 	</div>
 	
-	<div id="prelude" class="container-fluid">	
-		<h1>Prelude</h1>
-		<div class="event">
-			Tourney at Harrenhal
-		</div>
-		<div class="event">
-			Abduction of Lyanna Stark
-		</div>
-		<div class="event">
-			Trial by Fire
-		</div>	
-	</div>
 	
 	<div id="gulltown" class="container-fluid">
 		<div class="forces">
-		
+			<!--SVG file begins-->
 			<svg id="gullMap" width="1746" height="1792" viewBox="0 500 1746 1792" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 				<rect width="1746" height="1792" fill="#E5E5E5"/>
 				<rect width="1746" height="1792" fill="url(#pattern0)"/>
@@ -112,49 +95,290 @@
 				<image id="image0" width="1746" height="1792" xlink:href="Assets/Images/Gulltown.png"/>
 				</defs>
 			</svg>
-			<!-- <object id="gullMap" type="image/svg+xml" data="Assets/Images/Gulltown.svg"></object> -->
+			<!--SVG file ends-->
 		</div>
 		<div class="info">
+			
 			<img id="gullTitle" src="Assets/Images/GullTitle.png" />
 			<button class="play" onClick="playGulltown()">Play</button>
-			<!-- <div class="troops"></div> -->
+			<div class="content">
+				<p>Year: 282 AD<br>
+				Location: Gulltown<br>
+				Outcome: Rebel Victory</p>
+				<p>Rebel Commanders:<br>
+				Jon Arryn<br>
+				Robert Baratheon</p>
+				<p>Royalist Commanders:<br>
+				Marc Grafton</p>
+				<p>Impact: Unified the Vale, secured safe passage north and south respectively for Lord Eddard Stark and Lord Robert Baratheon.</p>
+			</div>
+			<div class="troops">
+			<p>Click to view troop information</p>
+				<button class="troop" onclick="gulltownB()" style="background-image: url(Assets/Images/Baratheon.png)"></button>
+				<button class="troop" onclick="gulltownA()" style="background-image: url(Assets/Images/Arryn.png)"></button>
+				<button class="troop" onclick="gulltownS()" style="background-image: url(Assets/Images/Stark.png)"></button>
+				<button class="troop" onclick="gulltownG()" style="background-image: url(Assets/Images/Grafton.png)"></button>
+				<button class="troop" onclick="gulltownReset()" style="background-image: url(Assets/Images/Reset.png)"></button>
+			</div>
+			
 		</div>
 	</div>
 	
 	<div id="summerhall" class="container-fluid">
-		<h1>Summerhall</h1>
+		<div class="forces">
+			<!--SVG file begins-->
+			<svg id="summerMap" width="1746" height="1792" viewBox="0 500 1446 1792" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+				<rect width="1746" height="1792" fill="#E5E5E5"/>
+				<rect width="1746" height="1792" fill="url(#pattern1)"/>
+				
+				<circle class="loyal" cx="1170" cy="900" r="15" fill="#319831"/>
+				<circle class="loyal" cx="1200" cy="860" r="15" fill="#303030"/>
+				<circle class="loyal" cx="1250" cy="840" r="15" fill="#FFFF34"/>
+				
+				<circle class="baratheon" cx="1420" cy="990" r="15" fill="#FFC700"/>
+				<circle class="baratheon" cx="1430" cy="930" r="15" fill="#FFC700"/>
+				<circle class="baratheon" cx="1480" cy="890" r="15" fill="#FFC700"/>
+				
+				<defs>
+				<pattern id="pattern1" patternContentUnits="objectBoundingBox" width="1" height="1">
+				<use xlink:href="#image1" transform="scale(0.000572738)"/>
+				</pattern>
+				<image id="image1" width="1746" height="1792" xlink:href="Assets/Images/Summerhall.png"/>
+				</defs>
+			</svg>
+			<!--SVG file ends-->
+		</div>
+		<div class="info">
+			
+			<img id="summerTitle" src="Assets/Images/SummerTitle.png" />
+			<button class="play" onClick="playSummerhall()">Play</button>
+			<div class="content">
+				<p>Year: 282 AD<br>
+				Location: Summerhall<br>
+				Outcome: Rebel Victory</p>
+				<p>Rebel Commanders:<br>
+				Robert Baratheon<br>
+				Rebel houses of the Stormlands</p>
+				<p>Loyalist Commanders:<br>
+				Lord Cafferen<br>
+				Lord Fell<br>
+				Lord Grandison</p>
+				<p>Impact: With the loyalist storm lords defeated, Robert consolidated his power in the Stormlands,
+				allowing him to march west without the threat of enemy persual from behind.</p>
+				<br>
+				<p>Click to view troop information</p>
+				<div class="troops">
+					i'll figure this out later
+				</div>
+			</div>
+		</div>
 	</div>
 	
 	<div id="ashford" class="container-fluid">
-		<h1>Ashford</h1>
+		<div class="forces">
+			<!--SVG file begins-->
+			<svg id="ashMap" width="1746" height="1792" viewBox="0 500 700 1792" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+				<rect width="1746" height="1792" fill="#E5E5E5"/>
+				<rect width="1746" height="1792" fill="url(#pattern2)"/>
+
+				<circle class="tarly" cx="500" cy="1000" r="15" fill="#057D05"/>
+				<circle class="tarly" cx="525" cy="1035" r="15" fill="#057D05"/>
+				<circle class="tarly" cx="515" cy="1070" r="15" fill="#057D05"/>
+				<circle class="tarly" cx="550" cy="1010" r="15" fill="#057D05"/>
+				<circle class="tarly" cx="560" cy="1055" r="15" fill="#057D05"/>
+				
+				<circle class="baratheon" cx="1020" cy="890" r="15" fill="#FFC700"/>
+				<circle class="baratheon" cx="1030" cy="950" r="15" fill="#FFC700"/>
+				<circle class="baratheon" cx="1080" cy="990" r="15" fill="#FFC700"/>
+
+				<defs>
+				<pattern id="pattern2" patternContentUnits="objectBoundingBox" width="1" height="1">
+				<use xlink:href="#image2" transform="scale(0.000572738)"/>
+				</pattern>
+				<image id="image2" width="1746" height="1792" xlink:href="Assets/Images/Ashford.png"/>
+				</defs>
+			</svg>
+			<!--SVG file ends-->
+		</div>
+		<div class="info">
+			
+			<img id="ashTitle" src="Assets/Images/AshTitle.png" />
+			<button class="play" onClick="playAshford()">Play</button>
+			<div class="content">
+				<p>Year: 282 AD<br>
+				Location: Gulltown<br>
+				Outcome: Royalist Victory</p>
+				<p>Rebel Commanders:<br>
+				Robert Baratheon</p>
+				<p>Royalist Commanders:<br>
+				Mace Tyrell<br>
+				Randyll Tarly</p>
+				<p>Impact: Robert retreated when faced with the much larger Tyrell force. This allowed Mace Tyrell to invade the Stormlands and lay seige to Storm's End.</p>
+				<br>
+				<p>Click to view troop information</p>
+				<div class="troops">
+					i'll figure this out later
+				</div>
+			</div>
+		</div>
 	</div>
 	
+	
+	<!--FINISH: 12/6 @ 3AM-->
 	<div id="bells" class="container-fluid">
-		<h1>Battle of the Bells</h1>
+		<div class="forces">
+			<!--SVG file begins-->
+			<svg id="bellsMap" width="1746" height="1792" viewBox="300 500 1746 1792" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+				<rect width="1746" height="1792" fill="#E5E5E5"/>
+				<rect width="1746" height="1792" fill="url(#pattern3)"/>
+
+				<defs>
+				<pattern id="pattern3" patternContentUnits="objectBoundingBox" width="1" height="1">
+				<use xlink:href="#image3" transform="scale(0.000572738)"/>
+				</pattern>
+				<image id="image3" width="1746" height="1792" xlink:href="Assets/Images/Bells.png"/>
+				</defs>
+			</svg>
+			<!--SVG file ends-->
+		</div>
+		<div class="info">
+			
+			<img id="gullTitle" src="Assets/Images/GullTitle.png" />
+			<button class="play" onClick="playGulltown()">Play</button>
+			<div class="content">
+				<p>Year: 282 AD<br>
+				Location: Gulltown<br>
+				Outcome: Rebel Victory</p>
+				<p>Rebel Commanders:<br>
+				Jon Arryn<br>
+				Robert Baratheon</p>
+				<p>Loyalist Commanders:<br>
+				Marc Grafton</p>
+				<p>Impact: Unified the Vale, secured safe passage north and south respectively for Lord Eddard Stark and Lord Robert Baratheon.</p>
+				<br>
+				<p>Click to view troop information</p>
+				<div class="troops">
+					i'll figure this out later
+				</div>
+			</div>
+		</div>
 	</div>
 	
 	<div id="trident" class="container-fluid">
-		<h1>Battle of the Trident</h1>
+		<div class="forces">
+			<!--SVG file begins-->
+			<svg id="gullMap" width="1746" height="1792" viewBox="0 500 1746 1792" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+				<rect width="1746" height="1792" fill="#E5E5E5"/>
+				<rect width="1746" height="1792" fill="url(#pattern0)"/>
+
+				<circle class="stark" cx="1200" cy="760" r="15" fill="#7F7F7F"/>
+				<circle class="stark" cx="1240" cy="730" r="15" fill="#7F7F7F"/>
+				<circle class="stark" cx="1160" cy="775" r="15" fill="#7F7F7F"/>
+				<circle class="stark" cx="1200" cy="720" r="15" fill="#7F7F7F"/>
+				<circle class="stark" cx="1170" cy="740" r="15" fill="#7F7F7F"/>
+				<circle class="stark" cx="1160" cy="700" r="15" fill="#7F7F7F"/>
+				
+				<circle class="baratheon" cx="1517" cy="974" r="15" fill="#FFC700"/>
+				<circle class="baratheon" cx="1567" cy="954" r="15" fill="#FFC700"/>
+				<circle class="baratheon" cx="1477" cy="1000" r="15" fill="#FFC700"/>
+				
+				<circle class="arryn" cx="1300" cy="860" r="15" fill="#1078C5"/>
+				<circle class="arryn" cx="1285" cy="900" r="15" fill="#1078C5"/>
+				<circle class="arryn" cx="1245" cy="910" r="15" fill="#1078C5"/>
+
+				<circle class="grafton" cx="1557" cy="1000" r="15" fill="#DC4024"/>
+				<circle class="grafton" cx="1617" cy="980" r="15" fill="#DC4024"/>
+
+				<defs>
+				<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+				<use xlink:href="#image0" transform="scale(0.000572738)"/>
+				</pattern>
+				<image id="image0" width="1746" height="1792" xlink:href="Assets/Images/Gulltown.png"/>
+				</defs>
+			</svg>
+			<!--SVG file ends-->
+		</div>
+		<div class="info">
+			
+			<img id="gullTitle" src="Assets/Images/GullTitle.png" />
+			<button class="play" onClick="playGulltown()">Play</button>
+			<div class="content">
+				<p>Year: 282 AD<br>
+				Location: Gulltown<br>
+				Outcome: Rebel Victory</p>
+				<p>Rebel Commanders:<br>
+				Jon Arryn<br>
+				Robert Baratheon</p>
+				<p>Loyalist Commanders:<br>
+				Marc Grafton</p>
+				<p>Impact: Unified the Vale, secured safe passage north and south respectively for Lord Eddard Stark and Lord Robert Baratheon.</p>
+				<br>
+				<p>Click to view troop information</p>
+				<div class="troops">
+					i'll figure this out later
+				</div>
+			</div>
+		</div>
 	</div>
 	
 	<div id="sack" class="container-fluid">
-		<h1>The Sack of King's Landing</h1>
+		<div class="forces">
+			<!--SVG file begins-->
+			<svg id="gullMap" width="1746" height="1792" viewBox="0 500 1746 1792" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+				<rect width="1746" height="1792" fill="#E5E5E5"/>
+				<rect width="1746" height="1792" fill="url(#pattern0)"/>
+
+				<circle class="stark" cx="1200" cy="760" r="15" fill="#7F7F7F"/>
+				<circle class="stark" cx="1240" cy="730" r="15" fill="#7F7F7F"/>
+				<circle class="stark" cx="1160" cy="775" r="15" fill="#7F7F7F"/>
+				<circle class="stark" cx="1200" cy="720" r="15" fill="#7F7F7F"/>
+				<circle class="stark" cx="1170" cy="740" r="15" fill="#7F7F7F"/>
+				<circle class="stark" cx="1160" cy="700" r="15" fill="#7F7F7F"/>
+				
+				<circle class="baratheon" cx="1517" cy="974" r="15" fill="#FFC700"/>
+				<circle class="baratheon" cx="1567" cy="954" r="15" fill="#FFC700"/>
+				<circle class="baratheon" cx="1477" cy="1000" r="15" fill="#FFC700"/>
+				
+				<circle class="arryn" cx="1300" cy="860" r="15" fill="#1078C5"/>
+				<circle class="arryn" cx="1285" cy="900" r="15" fill="#1078C5"/>
+				<circle class="arryn" cx="1245" cy="910" r="15" fill="#1078C5"/>
+
+				<circle class="grafton" cx="1557" cy="1000" r="15" fill="#DC4024"/>
+				<circle class="grafton" cx="1617" cy="980" r="15" fill="#DC4024"/>
+
+				<defs>
+				<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+				<use xlink:href="#image0" transform="scale(0.000572738)"/>
+				</pattern>
+				<image id="image0" width="1746" height="1792" xlink:href="Assets/Images/Gulltown.png"/>
+				</defs>
+			</svg>
+			<!--SVG file ends-->
+		</div>
+		<div class="info">
+			
+			<img id="gullTitle" src="Assets/Images/GullTitle.png" />
+			<button class="play" onClick="playGulltown()">Play</button>
+			<div class="content">
+				<p>Year: 282 AD<br>
+				Location: Gulltown<br>
+				Outcome: Rebel Victory</p>
+				<p>Rebel Commanders:<br>
+				Jon Arryn<br>
+				Robert Baratheon</p>
+				<p>Loyalist Commanders:<br>
+				Marc Grafton</p>
+				<p>Impact: Unified the Vale, secured safe passage north and south respectively for Lord Eddard Stark and Lord Robert Baratheon.</p>
+				<br>
+				<p>Click to view troop information</p>
+				<div class="troops">
+					i'll figure this out later
+				</div>
+			</div>
+		</div>
 	</div>
 	
-	<div id="aftermath" class="container-fluid">
-		<h1>Aftermath</h1>
-		<div class="event">
-			Siege of Storm's End
-		</div>
-		<br>
-		<div class="event">
-			Battle at the Tower of Joy
-		</div>
-		<br>
-		<div class="event">
-			Assault on Dragonstone
-		</div>	
-	</div>
+
 
 
 </body>
