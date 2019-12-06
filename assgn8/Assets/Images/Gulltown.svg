@@ -1,9 +1,9 @@
 <svg width="1746" height="1792" viewBox="0 500 1746 1792" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <rect width="1746" height="1792" fill="#E5E5E5"/>
 <rect width="1746" height="1792" fill="url(#pattern0)"/>
-<circle class="baratheon" cx="1517" cy="974" r="15" fill="#FFC700" cursor="pointer" onClick="gulltownStag()"/>
-<circle class="baratheon" cx="1607" cy="964" r="15" fill="#FFC700" cursor="pointer" onClick="gulltownStag()"/>
-<circle class="baratheon" cx="1477" cy="1000" r="15" fill="#FFC700" cursor="pointer" onClick="gulltownStag()"/>
+<circle class="baratheon" cx="1517" cy="974" r="15" fill="#FFC700" cursor="pointer"/>
+<circle class="baratheon" cx="1607" cy="964" r="15" fill="#FFC700" cursor="pointer"/>
+<circle class="baratheon" cx="1477" cy="1000" r="15" fill="#FFC700" cursor="pointer"/>
 <defs>
 <pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
 <use xlink:href="#image0" transform="scale(0.000572738)"/>

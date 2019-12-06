@@ -1,15 +1,24 @@
 function playGulltown() {
 	//move title up to reveal information about the battle	
 	var title = document.getElementById("gullTitle");
-	title.style.top = "10%";
+	title.style.top = "10%"; 
+	
+	var play = document.getElementsByClassName("play")[0];
+	play.style.top = "90%";
+	play.style.opacity = "0.0";
+
+	var bGull = document.getElementById("gullMap").contentDocument.getElementsByClassName("baratheon");
+	anime ({
+		targets: bGull,
+		translateX: +=45,
+	});
 	
 	//fill info innerHTML with info about the battle
 	//coming next lol
 	
-	//move the individual dots to represent the movements of the troops (using anime?)
-	//oh boy
-	
-	//access test
+	//move up force buttons
+	//coming...eventually
+
 }
 	
 function gulltownStag() {
