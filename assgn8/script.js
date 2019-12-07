@@ -817,7 +817,7 @@ function sackS() {
 			strokeWidth: 3
 		})
 		
-	document.getElementsByClassName("content")[5].innerHTML="wolfy";
+	document.getElementsByClassName("content")[5].innerHTML="<p>Commander: Eddard Stark<br>Alliance: The Rebellion</p><p>Eddard Stark gathered what remained of the Northernmen after the Trident and rode Southeast to the capital. When he arrived, however, the majority of the fighting had already concluded. The Lannisters had turned on the Crown, and Jaime Lannister had killed the King.</p><p>Eddard proceeded to the throne room, where Jaime was seated upon the Iron Throne. Eddard stared Jaime down until the man got up, and then proclaimed the throne for Robert.</p><p>Outcome: Victorious</p>";
 }
 
 function sackL() {
@@ -831,7 +831,7 @@ function sackL() {
 			strokeWidth: 3
 		})
 		
-	document.getElementsByClassName("content")[5].innerHTML="rawr";
+	document.getElementsByClassName("content")[5].innerHTML="<p>Commander: Tywin Lannister<br>Alliance: The Rebellion (Previously the Crown)</p><p>Tywin had claimed neutrality; however, as he had once served as Aerys' Hand of the King, it was believed he was loyal to the Crown. After the Trident, he marched his men across Westeros to the capital, claiming to support Aerys. However, upon entering, he began to sack the city.</p><p>His son Jaime, a member of the Kingsguard, first attempted to make peace with Aerys, but upon learning of Aerys' wildfire plot, he killed the King and his Hand. He would later hand the throne over to Robert.</p><p>Outcome: Victorious</p>";
 }
 
 function sackT() {
@@ -845,7 +845,7 @@ function sackT() {
 			strokeWidth: 3
 		})
 		
-	document.getElementsByClassName("content")[5].innerHTML="mad king wrongs";
+	document.getElementsByClassName("content")[5].innerHTML="<p>Commander: Aerys II Targaryen<br>Alliance: The Crown</p><p>Even before Rhaegar's death, Aerys had been planning to light the entire capital on fire. However, after the defeat at the Trident, he and his favored pyromancers sped up the work and deposited stashes of wildfire throughout the city.</p><p>While the city guard fought, Aerys remained in the Red Keep. His Hand and favored pyromancer Rossart was to set the fires, but he was intercepted and killed by Jaime. He next confronted Aerys, who tried to flee the throne upon hearing of Rossart's death. Jaime slit his throat on the steps of the throne room, ending the Targaryen dynasty.</p><p>Outcome: Defeated (Killed)</p>";
 }
 
 function sackReset() {	
