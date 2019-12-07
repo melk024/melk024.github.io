@@ -130,7 +130,7 @@ function gulltownG() {
 			strokeWidth: 3
 		})
 		
-	document.getElementsByClassName("content")[0].innerHTML="<p>Commander: Marq Grafton<br>Alliance: The Targaryans</p><p>Marq Grafton took charge over the Vale bannermen who turned their back on Lord Jon Arryn, returning to the loyalty of the King. They consolidated their forces at Gulltown, the ancestral seat of the Graftons. It is also the only port city in the Vale</p><p>However, the walls were breached by the Baratheon men, and Robert Baratheon slew Marq Grafton with his own hand. The Grafton lordship passed on to Lord Gerald, and they bent the knee to the rebellion.</p><p>Outcome: Defeated</p>";
+	document.getElementsByClassName("content")[0].innerHTML="<p>Commander: Marq Grafton<br>Alliance: The Crown</p><p>Marq Grafton took charge over the Vale bannermen who turned their back on Lord Jon Arryn, returning to the loyalty of the King. They consolidated their forces at Gulltown, the ancestral seat of the Graftons. It is also the only port city in the Vale</p><p>However, the walls were breached by the Baratheon men, and Robert Baratheon slew Marq Grafton with his own hand. The Grafton lordship passed on to Lord Gerald, and they bent the knee to the rebellion.</p><p>Outcome: Defeated</p>";
 }
 
 function gulltownReset() {	
@@ -156,7 +156,7 @@ var map = Snap('#gullMap');
 			strokeWidth: 0
 		})
 	
-	document.getElementsByClassName("content")[0].innerHTML = "<p>Year: 282 AD<br>Location: Gulltown<br>Outcome: Rebel Victory</p><p>Rebel Commanders:<br>Jon Arryn<br>Robert Baratheon</p><p>Royalist Commanders:<br>Marc Grafton</p><p>Impact: Unified the Vale, secured safe passage north and south respectively for Lord Eddard Stark and Lord Robert Baratheon.</p>";
+	document.getElementsByClassName("content")[0].innerHTML = "<p>Year: 282 AC<br>Location: Gulltown<br>Outcome: Rebel Victory</p><p>Rebel Commanders:<br>Jon Arryn<br>Robert Baratheon</p><p>Royalist Commanders:<br>Marc Grafton</p><p>Impact: Unified the Vale, secured safe passage north and south respectively for Lord Eddard Stark and Lord Robert Baratheon.</p>";
 }
 
 function playSummerhall() {
@@ -221,7 +221,7 @@ function summerhallB() {
 		})
 		
 	
-	document.getElementsByClassName("content")[1].innerHTML = "Baratheon boiii";
+	document.getElementsByClassName("content")[1].innerHTML = "<p>Commander: Robert Baratheon<br>Alliance: The Rebellion</p><p>Robert returned to Storm's End following his victory in Gulltown. However, upon his arrival, he heard rumor of Royalist storm lords who were consolidating their forces at Summerhall, planning to march on Storm's End. Robert passed control of the castle to his brother Stannis and raced East to meet them.</p><p>Somehow, Robert beat the three largest forces to Summerhall, and won three battles in a single day. He killed Lord Fell in combat, and forced Lord Cafferen and Lord Grandison to join his regiment.</p><p>Outcome: Victorious</p>";
 }
 
 function summerhallR() {	
@@ -236,7 +236,7 @@ function summerhallR() {
 		})
 		
 	
-	document.getElementsByClassName("content")[1].innerHTML = "mad king rights";
+	document.getElementsByClassName("content")[1].innerHTML = "<p>Commanders: Lords Cafferen, Fell, and Grandison<br>Alliance: The Crown</p><p>When Robert Baratheon called his bannermen to arms, some of the storm lords who remained loyal to the Crown resisted. Encouraged by the Hand of the King, they rejected his demands and decided to gather at Summerhall. From there, they were to march on Storm's End and confront the Baratheon forces there.</p><p>However, Robert caught wind of their planning, and intercepted the three lords and their armies before they could create a plan. Lord Fell was killed, and Lords Cafferen and Grandison were taking captive, along with Lord Fell's eldest son. Eventually, they would all fight and die for the rebellion.</p><p>Outcome: Defeated</p>";
 }
 
 function summerhallReset() {	
@@ -253,7 +253,7 @@ function summerhallReset() {
 		})
 		
 	
-	document.getElementsByClassName("content")[1].innerHTML = "<p>Year: 282 AD<br>Location: Summerhall<br>Outcome: Rebel Victory</p><p>Rebel Commanders:<br>Robert Baratheon<br>Rebel houses of the Stormlands</p><p>Royalist Commanders:<br>Lord Cafferen<br>Lord Fell<br>Lord Grandison</p><p>Impact: With the loyalist storm lords defeated, Robert consolidated his power in the Stormlands, allowing him to march west without the threat of enemy persual from behind.</p>";
+	document.getElementsByClassName("content")[1].innerHTML = "<p>Year: 282 AC<br>Location: Summerhall<br>Outcome: Rebel Victory</p><p>Rebel Commanders:<br>Robert Baratheon<br>Rebel houses of the Stormlands</p><p>Royalist Commanders:<br>Lord Cafferen<br>Lord Fell<br>Lord Grandison</p><p>Impact: With the loyalist storm lords defeated, Robert consolidated his power in the Stormlands, allowing him to march west without the threat of enemy persual from behind.</p>";
 }
 
 
@@ -319,7 +319,7 @@ function ashfordB() {
 		})
 		
 	
-	document.getElementsByClassName("content")[2].innerHTML = "Baratheon boiii";
+	document.getElementsByClassName("content")[2].innerHTML = "<p>Commander: Robert Baratheon<br>Alliance: The Rebellion</p><p>After his victory at Summerhall, Robert advanced toward the West and the Reach. Ashford was sworn to Highgarden, and likely a royalist holding. Taking Ashford also would have secured the stormlands' western border.</p><p>As Robert advanced, he ran into Randyll Tarly, leading his forces alongside Mace Tyrell. The Baratheon forces were overwhelmed, and forced to retreat before the bulk of the Reach forces had joined the battlefield.</p><p>Outcome: Surrendered</p>";
 }
 
 function ashfordT() {	
@@ -334,7 +334,7 @@ function ashfordT() {
 		})
 		
 	
-	document.getElementsByClassName("content")[2].innerHTML = "mad king rights";
+	document.getElementsByClassName("content")[2].innerHTML = "<p>Commanders: Randyll Tarly, Mace Tyrell<br>Alliance: The Crown</p><p>Randyll Tarly was commanding a van of the Tyrell army, and ran into Robert on his way to Ashford. He was swiftly able to overrun the Baratheon forces, and forced Robert and his men North.</p><p>After the battle, Mace Tyrell took credit for the defeat, and moved his entire army into the stormlands, where they would set up a year-long seige against Storm's End and the young Stannis Baratheon.</p><p>Outcome: Victorious</p>";
 }
 
 function ashfordReset() {	
@@ -351,7 +351,7 @@ function ashfordReset() {
 		})
 		
 	
-	document.getElementsByClassName("content")[2].innerHTML = "<p>Year: 282 AD<br>Location: Ashford<br>Outcome: Royalist Victory</p><p>Rebel Commanders:<br>Robert Baratheon</p><p>Royalist Commanders:<br>Mace Tyrell<br>Randyll Tarly</p><p>Impact: Robert retreated when faced with the much larger Tyrell force. This allowed Mace Tyrell to invade the Stormlands and lay seige to Storm's End.</p>";
+	document.getElementsByClassName("content")[2].innerHTML = "<p>Year: 282 AC<br>Location: Ashford<br>Outcome: Royalist Victory</p><p>Rebel Commanders:<br>Robert Baratheon</p><p>Royalist Commanders:<br>Mace Tyrell<br>Randyll Tarly</p><p>Impact: Robert retreated when faced with the much larger Tyrell force. This allowed Mace Tyrell to invade the Stormlands and lay seige to Storm's End.</p>";
 }
 
 function playBells() {
@@ -444,7 +444,7 @@ function bellsB() {
 		})
 		
 	
-	document.getElementsByClassName("content")[3].innerHTML = "baratheon boi";
+	document.getElementsByClassName("content")[3].innerHTML = "<p>Commander: Robert Baratheon<br>Alliance: The Rebellion</p><p>After force-marching his troops through the Riverlands, Robert sought sanctuary at the Stoney Sept. His wounds were taken care of, but overnight the Sept was moved on by Jon Connington, the new Hand of the King and close friend to Prince Rhaegar. Robert hid from his forces until the Stark and Tully men arrived.</p><p>He then fled from his hiding place in a brothel, slew six men, and gathered the rest of his men to push even further North. He nearly killed Jon Connington, but abandoned the fight to save his own life.</p><p>Outcome: Victorious</p>";
 }
 
 function bellsT() {
@@ -458,7 +458,7 @@ function bellsT() {
 			strokeWidth: 3
 		})
 	
-	document.getElementsByClassName("content")[3].innerHTML="fish shit";
+	document.getElementsByClassName("content")[3].innerHTML="<p>Commander: Hoster Tully<br>Alliance: The Rebellion</p><p>Although Hoster Tully was initially neutral in the fight, the combined diplomacy of Eddard Stark and Jon Arryn convinced him to pick up his banners for the Rebellion. Together, he and Eddard marched on the Stoney Sept to free Robert from the town.</p><p>The Rebel forces stormed the walls and fought fiercely against Connington's men, with the battle taking place in alleys and on rooftops. Hoster continued to accompany the Rebellion further north, supporting Robert through the remainder of the war.</p><p>Outcome: Victorious</p> ";
 }
 
 function bellsS() {
@@ -472,7 +472,7 @@ function bellsS() {
 			strokeWidth: 3
 		})
 		
-	document.getElementsByClassName("content")[3].innerHTML="wolfy";
+	document.getElementsByClassName("content")[3].innerHTML="<p>Commander: Eddard Stark<br>Alliance: The Rebellion</p><p>Eddard had been heading south to meet with Robert when the Stoney Sept was swarmed. He stopped at Riverrun and convinced Lord Hoster Tully to send his men along with him to the Sept, where they led the charge on the Royalist forces.</p><p>The Rebel forces stormed the walls and fought fiercely against Connington's men, with the battle taking place in alleys and on rooftops. Robert credited Eddard with the eventual victory.</p><p>Outcome: Victorious</p>";
 }
 
 function bellsC() {
@@ -486,7 +486,7 @@ function bellsC() {
 			strokeWidth: 3
 		})
 		
-	document.getElementsByClassName("content")[3].innerHTML="silver prince rights";
+	document.getElementsByClassName("content")[3].innerHTML="<p>Commander: Jon Connington<br>Alliance: The Crown</p><p>After Robert escaped at Ashford, the King appointed Jon Connington as his new hand and sent him to the Stoney Sept. Jon and his men swept the entire town from top to bottom throughout the night, but the townsfolk spirited Robert from home to home.</p><p>When the Rebel forces arrived, Jon led his men into a raging fight throughout the narrow city streets. He was nearly killed by Robert on the steps of the Sept, and was eventually forced to retreat. He was exiled by the King for his failure.</p><p>Outcome: Defeated (Exiled)</p>";
 }
 
 function bellsReset() {	
@@ -512,7 +512,7 @@ var map = Snap('#bellsMap');
 			strokeWidth: 0
 		})
 	
-	document.getElementsByClassName("content")[3].innerHTML="reset";
+	document.getElementsByClassName("content")[3].innerHTML="<p>Year: 283 AC<br>Location: The Stoney Sept<br>Outcome: Rebel Victory</p><p>Rebel Commanders:<br>Robert Baratheon<br>Eddard Stark<br>Hoster Tully</p><p>Royalist Commanders:<br>Jon Connington</p><p>Impact: Robert was able to escape the sack of the Sept, fleeing toward the Trident river. The combined Stark and Tully forces crushed the Connington forces, and Jon Connington was forced into exile for the shame. This is commonly regarded as the turning point in the war.</p>";
 }
 
 function playTrident() {
@@ -616,7 +616,7 @@ function playTrident() {
 		mTrident[i].animate(
 			{cx: newX,
 			cy: newY},
-			1000);
+			1500);
 	}
 
 }
@@ -633,7 +633,7 @@ function tridentB() {
 		})
 		
 	
-	document.getElementsByClassName("content")[4].innerHTML = "baratheon boi";
+	document.getElementsByClassName("content")[4].innerHTML = "<p>Commander: Robert Baratheon<br>Alliance: The Rebellion</p><p>Now joined by Eddard, Hoster, and Jon Arryn, Robert continued North to try and move on King's Landing. As he travelled to the Kingsroad, he was met by the Royalist forces led by Prince Rhaegar. The battle raged on, but was decided when the two men met for single combat.</p><p>With the battle raging around them, Robert and Rhaegar fought hand-to-hand for nearly a half hour. Robert was wounded by the Prince, but he eventually killed him with a blow to the chest from his warhammer. At this point, the Royalists fled.</p><p>Outcome: Victorious</p>";
 }
 
 function tridentT() {
@@ -647,7 +647,7 @@ function tridentT() {
 			strokeWidth: 3
 		})
 	
-	document.getElementsByClassName("content")[4].innerHTML="fish shit";
+	document.getElementsByClassName("content")[4].innerHTML="<p>Commander: Hoster Tully<br>Alliance: The Rebellion</p><p>The Riverlands were still harshly divided between the Rebellion and the Royalists, but Hoster led a small collection of men into the fighting. Jason Mallister, a lord of the Riverlands, killed three of Rhaegar's bannermen.</p><p>He also called Walder Frey to arms; however, the man was late to arrive, and showed up after the battle had been fought. Hoster mocked him and began to call Walder's loyalty into question.</p><p>Outcome: Victorious</p>";
 }
 
 function tridentS() {
@@ -661,7 +661,7 @@ function tridentS() {
 			strokeWidth: 3
 		})
 		
-	document.getElementsByClassName("content")[4].innerHTML="wolfy";
+	document.getElementsByClassName("content")[4].innerHTML="<p>Commander: Eddard Stark<br>Alliance: The Rebellion</p><p>Eddard led the largest part of the Rebel army, with the majority of the houses in the North picking up their banners to fight for Robert. His men were also vastly more battle-hardened than the forces of the Crown, which helped turn the tide of the fighting.</p><p>After Robert slew the Prince, Eddard was the first man to his side. He convinced Robert to stay at the Trident to recover, and Robert insisted that Eddard continue south without him and pursue the Royalist army back to the capital.</p><p>Outcome: Victorious</p>";
 }
 
 function tridentA() {
@@ -675,7 +675,7 @@ function tridentA() {
 			strokeWidth: 3
 		})
 		
-	document.getElementsByClassName("content")[4].innerHTML="caw";
+	document.getElementsByClassName("content")[4].innerHTML="<p>Commander: Jon Arryn<br>Alliance: The Rebellion</p><p>Jon Arryn would rejoin the Rebel forces after the Battle of the Bells, and continue back north with them. He led forces from assorted houses in the Vale, although some, like the Graftons, remained loyal to the Crown.</p><p>One of the men under his command, Lyn Corbray, cut down the Dornish forces and slew Lewyn Martell. After the fighting, Jon remained at the Trident with a wounded Robert.</p><p>Outcome: Victorious</p>";
 }
 
 function tridentR() {
@@ -689,7 +689,7 @@ function tridentR() {
 			strokeWidth: 3
 		})
 		
-	document.getElementsByClassName("content")[4].innerHTML="silver prince wrongs";
+	document.getElementsByClassName("content")[4].innerHTML="<p>Commander: Rhaegar Targaryen<br>Alliance: The Crown</p><p>The Crown Prince returned from Dorne with a force of 10,000 Dornishmen after the fighting at the Stoney Sept, and was sent east by his father. While on the Kingsroad, he encountered the Rebel forces as he tried to cross the river at the Trident.</p><p>In his first fight of the war, Rhaegar cut through the first lines of the Rebel army and challenged Robert to single combat. Although he was able to wound him, Rhaegar was eventually killed by Robert, which scattered the remaining Targaryen forces.</p><p>Outcome: Defeated (Killed)</p>";
 }
 
 function tridentM() {
@@ -703,7 +703,7 @@ function tridentM() {
 			strokeWidth: 3
 		})
 		
-	document.getElementsByClassName("content")[4].innerHTML="unbent";
+	document.getElementsByClassName("content")[4].innerHTML="<p>Commander: Lewyn Martell<br>Alliance: The Crown</p><p>Dorne was forced to enter the fight by the King, who reminded the Martells that Prince Rhaegar's wife, Elia Martell, was kept in the capital. 10,000 Dornishmen accompanied Rhaegar north, and fought with him at the Trident.</p><p>Lewyn was initially wounded in the attack, and then was killed by Jason Mallister. The majority of the Dornish host returned south after the defeat.</p><p>Outcome: Defeated</p>";
 }
 
 function tridentReset() {	
@@ -739,7 +739,7 @@ var map = Snap('#tridentMap');
 			strokeWidth: 0
 		})
 	
-	document.getElementsByClassName("content")[4].innerHTML="reset";
+	document.getElementsByClassName("content")[4].innerHTML="<p>Year: 283 AC<br>Location: The Trident river<br>Outcome: Decisive Rebel Victory</p><p>Rebel Commanders:<br>Robert Baratheon<br>Jon Arryn<br>Eddard Stark<br>Hoster Tully</p><p>Royalist Commanders:<br>Rhaegar Targaryen<br>Lewyn Martell</p><p>Impact: Prince Rhaegar was killed by Robert in single combat, scattering the rest of the Royalist forces. Robert, however, was wounded, and gave control of the Rebel vanguard to Eddard Stark, who pursued the Royalist forces back to King's Landing.</p>";
 }
 
 function playSack() {
@@ -866,5 +866,5 @@ var map = Snap('#sackMap');
 			strokeWidth: 0
 		})
 	
-	document.getElementsByClassName("content")[5].innerHTML="reset";
+	document.getElementsByClassName("content")[5].innerHTML="<p>Year: 283 AC<br>Location: King's Landing<br>Outcome: Rebel Victory and establishment of the Baratheon dynasty</p><p>Rebel Commanders:<br>Tywin Lannister<br>Eddard Stark</p><p>Royalist Commanders:<br>Aerys Targaryen</p><p>Impact: The capital fell when the Lannisters betrayed the crown, and Jaime Lannister killed the king. He surrendered the throne to Eddard Stark, who in turn installed Robert Baratheon as king. The majority of fighting was over, although a few battles continued in the south.</p>";
 }
