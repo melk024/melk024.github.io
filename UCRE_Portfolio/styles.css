@@ -1,0 +1,193 @@
+html, body {
+	font-family: Open Sans, sans-serif;
+	color: #2A2D34;
+	background-color: #F6F8F8;
+	scroll-behavior: smooth;	 
+	margin: 0px 65px 32px;
+}
+
+h1 {
+	color: #C6DBF0;
+	font-weight: 700;
+}
+
+#title {
+	font-family: Assistant, sans-serif;
+	font-weight: 700;
+	color: #F6F8F8;
+	font-size: 32px;
+}
+
+#title a {
+	text-decoration: none;
+	color: #F6F8F8;
+}
+
+#h0 {
+	font-size: 50px;
+	font-family: Assistant, sans-serif;
+	font-weight: 700;
+	color: #A0C4E2;
+}
+
+header {
+	background-color: #A0C4E2;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 99vw;
+	padding: 15px;
+	display: flex;
+	align-items: center;
+}
+
+nav {
+	font-family: Assistant, sans-serif;
+	flex: 750px;
+	display: flex;
+	justify-content: flex-end;
+	padding-right: 5px;
+	font-weight: 300;
+	font-size: 20px;
+}
+
+nav a {
+	border-radius: 5px;
+	padding: 15px;
+	margin: 5px;
+	text-decoration: none;
+	color: white;	
+	text-align: center;
+	display: block;
+}
+
+nav a:hover {
+	font-weight: 600;
+	
+}
+
+.section {
+	padding-top: 100px;
+	width: 100%;
+}
+
+.contentRight {
+	text-align: right;
+	padding-left: 16px;
+}
+
+.contentLeft {
+	padding-right: 16px;
+}
+
+#top {
+	height: 120px;
+	width: 100%;
+}
+
+.summary {
+	display: flex;
+	justify-content: space-between;
+}
+
+.summary img {
+	width: 40%;
+}
+
+#members {
+	display: flex;
+	justify-content: space-between;
+	margin: 15px 16px 0px;
+}
+
+.member {
+	flex: 0 1 250px;
+	height: 400px;
+	background-color: #F6F8F8;
+	box-shadow: 2px 2px 6px #7E8185;
+	padding: 8px;
+}
+
+.member h3 {
+	color: #C6DBF0;
+	text-align: center;
+}
+
+.member h4 {
+	text-align: center;
+}
+
+.member img {
+	display: block;
+	width: 30%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#problem {
+	display: flex;
+	justify-content: space-between;
+}
+
+#problem img {
+	width: 60%;
+}
+
+.method {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+#methods img {
+	width: 40%;
+}
+
+.quote {
+	font-size: 45px;
+	font-weight: 700;
+	text-align: center;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.quote b {
+	color: #A0C4E2;
+}
+
+.quote p {
+	padding: 16px;
+}
+
+#evidence img {
+	width: 20%;
+}
+
+.insight {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.insight b {
+	font-size: 120px;
+	font-weight: 700;
+	text-align: center;
+	color: #A0C4E2;
+	padding: 8px;
+}
+
+.solutions {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.solutions img {
+	width: 300px;
+}
+
+.solutions h2 {
+	text-align: center;
+}
